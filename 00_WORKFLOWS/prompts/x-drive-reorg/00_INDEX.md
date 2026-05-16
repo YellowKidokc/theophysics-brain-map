@@ -16,7 +16,7 @@
 | 4b | [Root simplification](4b_root_simplification.md) | Move 9 NLPs under `X:\00_WORKFLOWS\`, junctions at old paths | Medium | 4a complete |
 | 4c | [Batch-script path sweep](4c_batch_script_sweep.md) | Rewrite 78 `D:\BIL\*` + `D:\FAP` refs across 10 BIL files + Task Scheduler XML | Medium | — |
 | 4d | [Intake engine — separable Python program](4d_intake_engine_program.md) | Watchdog + Ollama Mistral classifier + router as portable Python package | Medium | — |
-| 4e | [PySide 6 dashboard](4e_pyside_dashboard.md) | GUI: live brain state, queue depths, schedule view, MVP read-only | High | 4d state schema |
+| 4e | [PySide 6 workflow composer](4e_pyside_workflow_composer.md) | GUI = operating surface: Monitor + Compose + Run + Health panes. Reads workflow-config / state-manifest / dependencies JSON contracts. Replaces .bat clicks. | Medium | Backside architecture (BACKSIDE_ARCHITECTURE.md) + 4a complete |
 | 4f | [Conversion layer](4f_conversion_layer.md) | MarkItDown + Whisper + YouTube + OCR + TTS unified as library + standalone NLP. Any format → canonical markdown | Medium | — |
 | 4g | [Root health-check master](4g_root_checks_master.md) | `X:\CHECKS\RUN_ALL.bat` — orchestrates per-NLP `health_check.bat` + shared services + framework anchors → single report | Low | 4a complete |
 | 5 | [BIL + FAP migration](5_bil_fap_migration.md) | `robocopy /MOVE D:\BIL X:\BIL` + Task Scheduler re-import, verify FAP sync | High | 4c complete |
