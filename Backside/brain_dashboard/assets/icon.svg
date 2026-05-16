@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Brain Dashboard icon">
+  <rect width="128" height="128" rx="16" fill="#20242c"/>
+  <g fill="#67b7ff">
+    <circle cx="40" cy="44" r="8"/>
+    <circle cx="64" cy="32" r="8"/>
+    <circle cx="88" cy="44" r="8"/>
+    <circle cx="40" cy="84" r="8"/>
+    <circle cx="64" cy="96" r="8"/>
+    <circle cx="88" cy="84" r="8"/>
+    <circle cx="64" cy="64" r="10"/>
+  </g>
+  <g stroke="#9ad1ff" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M40 44 L64 32 L88 44"/>
+    <path d="M40 84 L64 96 L88 84"/>
+    <path d="M40 44 L40 84"/>
+    <path d="M88 44 L88 84"/>
+    <path d="M64 32 L64 96"/>
+    <path d="M40 44 L64 64 L88 44"/>
+    <path d="M40 84 L64 64 L88 84"/>
+  </g>
+</svg>
