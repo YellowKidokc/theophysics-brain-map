@@ -8,6 +8,22 @@ The 3-tier topology under `X:\Backside\`. Models are atoms, stations are reusabl
 
 ---
 
+## Working grammar
+
+```text
+station = reusable capability
+workflow = ordered use of stations
+packet = thing being transformed
+```
+
+Build verified stations first. Workflows compose stations rather than cloning their logic. Packets carry the source, public artifacts, working remnants, and machine metadata through the station chain.
+
+The packet folder can be public-addressable, but only its `PUBLIC/` layer is consumer-facing.
+
+See `PACKETS_CONVENTION.md` for the packet contract.
+
+---
+
 ## The three tiers
 
 ```
@@ -62,6 +78,23 @@ X:\Backside\                                  ← env-var: BRAIN_ROOT\Backside
       ├── apps/
       └── root-leftovers/
 ```
+
+---
+
+## Packets tier addendum
+
+`X:\Backside\packets\` is the portable-work-unit tier. It sits beside models, stations, and workflows.
+
+```text
+packets/
+  <year>/<month>/<packet-name>/
+    PUBLIC/     reader-facing pages and final exports
+    WORKING/    source, drafts, station outputs, remnants
+    MACHINE/    metadata, provenance, station logs, tags
+    ARCHIVE/    superseded/raw/failed-run artifacts
+```
+
+Do not create top-level folders for every remnant. Remnants stay inside the packet that produced them.
 
 ---
 

@@ -5,7 +5,9 @@
 **Status:** live map
 **Last updated:** 2026-05-16
 
-Workflows belong in Backside because they are machinery. David should see their clean front doors through `X:\00_WORKFLOWS`, `X:\DROP_HERE`, `X:\EXPORTS`, or the dashboard, not a sprawl of runtime folders at X:\ root.
+Workflows belong in Backside because they are machinery. David should see their clean front doors through `X:\00_WORKFLOWS`, `X:\DROP_HERE`, `X:\EXPORTS`, packets, or the dashboard, not a sprawl of runtime folders at X:\ root.
+
+A workflow is an ordered recipe that calls verified stations. It should not reimplement station logic inline.
 
 ## Naming
 
@@ -61,3 +63,19 @@ A workflow can have a root click-button or dashboard tile, but the actual runtim
 | `brain-dashboard.workflow` | dashboard launcher/control surface |
 
 Do not move live folders here until the path sweep and junction plan are ready.
+
+## Packet movement
+
+Workflows should move a packet through stations:
+
+```text
+source
+-> executive-summary
+-> translation
+-> seven-questions
+-> axiom-candidates
+-> review/promotion
+-> public-export
+```
+
+Each station writes its outputs into the packet instead of scattering remnants across the drive.

@@ -7,6 +7,16 @@
 
 Stations are smaller than workflows. A workflow chains stations; a station does one job well.
 
+The station is the reusable capability. Once a station is verified, any workflow can call it.
+
+```text
+station = reusable capability
+workflow = ordered use of stations
+packet = thing being transformed
+```
+
+7QS is the station grammar, not the station filesystem. Do not create seven physical folders inside every station unless that station truly produces separate Q artifacts. Put the 7Q mapping in `station.json`, prompts, reports, and tests.
+
 Folder names end in `.station`:
 
 ```text
@@ -28,5 +38,18 @@ math-clarify.station
 | `claim-extract.station` | `mistral-7b-instruct.model` |
 | `contradiction-scan.station` | `deberta-v3-large.model` |
 | `math-clarify.station` | Math Translation Layer |
+| `seven-questions.station` | refined 7QS runner; Foundations / Reversals / Evidence |
+| `axiom-candidates.station` | refined 7QS JSON -> axiom candidates |
 
 Do not promote a station to workflow just because it is useful. Promote only when it has its own intake, run lifecycle, output contract, and dashboard tile.
+
+## Verification rule
+
+A station is not real just because the folder exists. A station becomes reusable only when it has:
+
+- input contract
+- output contract
+- no undeclared side effects outside the packet
+- test example
+- log/provenance behavior
+- pass/fail criteria

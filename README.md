@@ -18,6 +18,7 @@ The map of the Theophysics brain — David Lowe's `X:\` working drive. Maps, con
 | [`THEOPHYSICS_PRIMER.md`](THEOPHYSICS_PRIMER.md) | Framework anchor doc — every AI partner loads this at session start (Master Equation, 10 Laws, Boundary Proof, Theopoetic format, R-rules, glossary) |
 | [`BRAIN_README.md`](BRAIN_README.md) | The signpost README at `X:\` root — human front door for the drive itself |
 | [`EXPORTS_CONVENTION.md`](EXPORTS_CONVENTION.md) | Convention for final human-readable outputs under `X:\EXPORTS\` |
+| [`PACKETS_CONVENTION.md`](PACKETS_CONVENTION.md) | Convention for packetized work units with `PUBLIC`, `WORKING`, `MACHINE`, and `ARCHIVE` layers |
 | [`00_WORKFLOWS/`](00_WORKFLOWS/) | Workflow lane docs, healthcheck infrastructure, root maps, and the Codex prompt bank |
 | [`00_WORKFLOWS/prompts/x-drive-reorg/`](00_WORKFLOWS/prompts/x-drive-reorg/) | **The Codex prompts.** 4a–4g + Phase 5. Start at [`00_INDEX.md`](00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md). |
 | [`Backside/`](Backside/) | Machinery layer: model registry, workflows, stations, prompt packs, dashboard MVP, station lab, conversion library, and cleanup logs |
