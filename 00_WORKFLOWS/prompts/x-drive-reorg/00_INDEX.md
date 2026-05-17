@@ -26,6 +26,16 @@
 
 ---
 
+## Implementation snapshot — 2026-05-16
+
+- **4a is partial:** generated artifact pack exists under `4a-output/`; `apply_4a.ps1` is dry-run-first and safer than the original direct-junction command, but live X:\ acceptance checks still need to run.
+- **4e is partial:** `Backside/brain_dashboard` is a dashboard MVP with passing tests. The broader Workflow Composer scope is not complete.
+- **4f is partial:** `Backside/conversion_lib` and `00_WORKFLOWS/conversion-layer` exist and smoke-test for Markdown/text conversion. Full MarkItDown, Whisper, OCR, and YouTube coverage still needs deeper adapter tests.
+- **Station lab is sidecar:** `Backside/station_lab` exists for paper-grader station tuning. It is useful, but it is not the 4d intake engine.
+- **4b, 4c, 4d, 4g, and 5 remain prompt-out work** until their acceptance checks run against the live X:\ and D:\ paths.
+
+---
+
 ## Dependency graph
 
 ```mermaid

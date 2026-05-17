@@ -1,0 +1,7 @@
+{
+  "library": "X:\\Backside\\conversion_lib",
+  "config": "X:\\Backside\\conversion_lib\\config\\x_drive.yaml",
+  "export_root": "X:\\EXPORTS\\conversion-layer",
+  "state_root": "X:\\Backside\\_state\\conversion-layer"
+}
+
