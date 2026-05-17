@@ -20,7 +20,7 @@ The map of the Theophysics brain — David Lowe's `X:\` working drive. Maps, con
 | [`EXPORTS_CONVENTION.md`](EXPORTS_CONVENTION.md) | Convention for final human-readable outputs under `X:\EXPORTS\` |
 | [`00_WORKFLOWS/`](00_WORKFLOWS/) | Workflow lane docs, healthcheck infrastructure, root maps, and the Codex prompt bank |
 | [`00_WORKFLOWS/prompts/x-drive-reorg/`](00_WORKFLOWS/prompts/x-drive-reorg/) | **The Codex prompts.** 4a–4g + Phase 5. Start at [`00_INDEX.md`](00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md). |
-| [`Backside/`](Backside/) | Phase logs, dedup reference implementation, dashboard MVP, station lab, and conversion library |
+| [`Backside/`](Backside/) | Machinery layer: model registry, workflows, stations, prompt packs, dashboard MVP, station lab, conversion library, and cleanup logs |
 | [`plan/`](plan/) | The plan doc that David approved 2026-05-16 — phased restructure with Option A (BIL move to X:) locked |
 | `RUN_*.bat` | Top-level click-buttons David uses today (FAP pipeline, public article refinery) |
 

@@ -13,38 +13,44 @@ The 3-tier topology under `X:\Backside\`. Models are atoms, stations are reusabl
 ```
 X:\Backside\                                  ← env-var: BRAIN_ROOT\Backside
 │
-├── _models/                                  ← raw artifacts (weights, configs only)
-│     ├── moon-streak/                        ← e.g. theopoetic-style fine-tune
+├── _models/                                  ← model cards + local weight/runtime contracts
+│     ├── moon-streak.model/                  ← e.g. theopoetic-style fine-tune
 │     │     ├── moon-streak.gguf
 │     │     ├── tokenizer.json
 │     │     └── card.json                     ← {name, size, quant, license, anchor_role}
-│     ├── deepseek-coder/
-│     ├── clip-vision/
-│     ├── deberta-v3-large/
-│     ├── mistral-7b-instruct/
-│     └── whisper-large-v3/
+│     ├── deepseek-coder.model/
+│     ├── clip-vision.model/
+│     ├── deberta-v3-large.model/
+│     ├── mistral-7b-instruct.model/
+│     ├── whisper-large-v3.model/
+│     ├── timeline.model/                    ← event/date/entity chronology builder
+│     ├── facts.model/                       ← provenance-first fact ledger, no unsupported claims
+│     └── paper-citation.model/              ← paper proximity, cite/represent/compare routing
 │
 ├── stations/                                 ← reusable skill services (called by workflows)
-│     ├── claim-extract/
-│     ├── ME-tag-paragraph/                   ← paragraph-level Master Equation tagger
-│     ├── axiom-hit/
-│     ├── fruits-score/
-│     ├── seven-q-score/
-│     ├── contradiction-scan/
-│     ├── describe-figure/                    ← clip-vision + Mistral describer
-│     ├── deconstruct-picture/                ← look at picture → return prompt to replicate
-│     ├── math-clarify/                       ← Math Translation Layer as service
-│     ├── theopoetic-format/                  ← moon-streak-driven style emitter
-│     └── lossless-summarize/                 ← canonical lossless format
+│     ├── claim-extract.station/
+│     ├── ME-tag-paragraph.station/           ← paragraph-level Master Equation tagger
+│     ├── axiom-hit.station/
+│     ├── fruits-score.station/
+│     ├── seven-q-score.station/
+│     ├── contradiction-scan.station/
+│     ├── describe-figure.station/            ← clip-vision + Mistral describer
+│     ├── deconstruct-picture.station/        ← look at picture → return prompt to replicate
+│     ├── math-clarify.station/               ← Math Translation Layer as service
+│     ├── theopoetic-format.station/          ← moon-streak-driven style emitter
+│     └── lossless-summarize.station/         ← canonical lossless format
 │
 ├── workflows/                                ← end-to-end pipelines (clicked from GUI)
-│     ├── grade-paper/                        ← what PPG becomes
-│     ├── refresh-axiom-snapshot/             ← what axioms NLP becomes
-│     ├── route-and-convert/                  ← what knowledge-refinery becomes
-│     ├── build-ai-portal/
-│     ├── handoff-session/
-│     ├── pull-link/
-│     └── deconstruct-picture/                ← one-for-one workflows live here too
+│     ├── grade-paper.workflow/               ← what PPG becomes
+│     ├── refresh-axiom-snapshot.workflow/    ← what axioms NLP becomes
+│     ├── route-and-convert.workflow/         ← what knowledge-refinery becomes
+│     ├── build-ai-portal.workflow/
+│     ├── handoff-session.workflow/
+│     ├── pull-link.workflow/
+│     └── deconstruct-picture.workflow/       ← one-for-one workflows live here too
+│
+├── prompts/                                  ← reusable prompt packs, not runtime chatter
+│     └── x-drive-reorg.prompt-pack/
 │
 ├── _state/                                   ← cross-workflow run registry
 │     ├── active_runs.json                    ← list of in-flight runs (GUI polls this)
@@ -62,7 +68,7 @@ X:\Backside\                                  ← env-var: BRAIN_ROOT\Backside
 ## Every workflow folder has this shape
 
 ```
-workflows/<workflow-name>/
+workflows/<workflow-name>.workflow/
   README.md                  ← human-facing (Layer 1 + Layer 2)
   _AGENT_BRIEF.md            ← AI-facing mission card
   RUN.bat                    ← click-button entry (defaults to configs/default.json)
@@ -85,20 +91,20 @@ workflows/<workflow-name>/
 ## Every station folder has this shape
 
 ```
-stations/<station-name>/
+stations/<station-name>.station/
   README.md
   _AGENT_BRIEF.md
   station.py                 ← the service (callable from any workflow)
   prompt.md                  ← the prompt template
   health_check.bat
-  uses-model.txt             ← single line: which model this station uses (e.g. "moon-streak")
+  uses-model.txt             ← single line: which model this station uses (e.g. "moon-streak.model")
   config.json
 ```
 
 ## Every model folder has this shape
 
 ```
-_models/<model-name>/
+_models/<model-name>.model/
   <weights>.gguf             ← or .safetensors, .bin, etc.
   tokenizer.json             ← or equivalent
   card.json                  ← metadata
@@ -107,14 +113,14 @@ _models/<model-name>/
 `card.json` schema:
 ```json
 {
-  "name": "moon-streak",
+  "name": "moon-streak.model",
   "anchor_role": "theopoetic-style-emitter",
   "base_model": "mistral-7b-instruct-v0.3",
   "quant": "Q4_K_M",
   "size_gb": 4.1,
   "license": "Apache-2.0",
   "fine_tuned": true,
-  "fine_tune_dataset": "X:\\Backside\\_models\\moon-streak\\dataset-200-theopoetic-examples.jsonl",
+  "fine_tune_dataset": "X:\\Backside\\_models\\moon-streak.model\\dataset-200-theopoetic-examples.jsonl",
   "trained_at": "2026-05-XX"
 }
 ```
@@ -233,16 +239,16 @@ The root health-check (`X:\CHECKS\RUN_ALL.bat`) reads every `dependencies.json` 
 
 | Current path | New path |
 |---|---|
-| `X:\paper-proof-grader\` | `Backside/workflows/grade-paper/` |
-| `X:\axioms\` | `Backside/workflows/refresh-axiom-snapshot/` (logic → `stations/axiom-hit/`) |
-| `X:\knowledge-refinery\` | `Backside/workflows/route-and-convert/` (model-stations → real `stations/`) |
-| `X:\ai-portal-generator\` | `Backside/workflows/build-ai-portal/` |
-| `X:\session-handoff-drop\` | `Backside/workflows/handoff-session/` |
-| `X:\link-pull-drop\` | `Backside/workflows/pull-link/` |
+| `X:\paper-proof-grader\` | `Backside/workflows/grade-paper.workflow/` |
+| `X:\axioms\` | `Backside/workflows/refresh-axiom-snapshot.workflow/` (logic → `stations/axiom-hit.station/`) |
+| `X:\knowledge-refinery\` | `Backside/workflows/route-and-convert.workflow/` (model-stations → real `stations/`) |
+| `X:\ai-portal-generator\` | `Backside/workflows/build-ai-portal.workflow/` |
+| `X:\session-handoff-drop\` | `Backside/workflows/handoff-session.workflow/` |
+| `X:\link-pull-drop\` | `Backside/workflows/pull-link.workflow/` |
 | `X:\models\` | `Backside/_models/` |
 | `X:\proof-architecture\`, `X:\proof-explorer\` | stay at `X:\` root (these are output sinks, not workflows) |
 | `X:\Backside\` (current archive) | `Backside/_archive/` |
-| `D:\GitHub\Math-Translation-Layer\` | `Backside/stations/math-clarify/` (move + repackage) |
+| `D:\GitHub\Math-Translation-Layer\` | `Backside/stations/math-clarify.station/` (move + repackage) |
 
 ---
 

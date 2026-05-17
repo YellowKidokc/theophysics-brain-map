@@ -58,6 +58,13 @@ Status: **PARTIAL**
 - Smoke evidence: `paper_grader_station_lab.py --input README.md --station overview` produced an overview export.
 - This is useful, but it is sidecar work; do not confuse it with 4d intake engine completion.
 
+### Backside model/workflow registry
+Status: **PARTIAL**
+- `Backside/_models` now defines typed `.model` folders and model cards.
+- New conceptual lanes exist for `timeline.model`, `facts.model`, and `paper-citation.model`.
+- `Backside/workflows`, `Backside/stations`, and `Backside/prompts` now document typed folder naming: `.workflow`, `.station`, `.prompt-pack`.
+- This is a map/contract only. Live workflow moves still depend on 4b/4c path sweep and junction planning.
+
 ### 4g — Root checks master
 Status: **NOT VERIFIED**
 - Prompt exists and expects `X:/CHECKS/RUN_ALL.bat` plus report output.
