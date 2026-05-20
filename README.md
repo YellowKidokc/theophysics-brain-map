@@ -13,13 +13,18 @@ The map of the Theophysics brain — David Lowe's `X:\` working drive. Maps, con
 
 | Path | What it is |
 |---|---|
+| [`GRAPH_LAYER_DECISION_2026-05-20.md`](GRAPH_LAYER_DECISION_2026-05-20.md) | Decision note for an Open-Brain-Map-style semantic graph over folders, workflows, stations, Postgres, exports, prompts, and vector systems |
+| [`ROOT_REORG_TARGET_2026-05-20.md`](ROOT_REORG_TARGET_2026-05-20.md) | The new root cleanup contract: `David`, `GUI`, `Conversions`, `EXPORTS`, and `Backside` |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | The X:\ brain system map — 11 Mermaid diagrams of zones, workflows, intake/output flow |
 | [`FOLDER_CONVENTIONS.md`](FOLDER_CONVENTIONS.md) | The 3-layer folder contract every folder on X:\ honors (L1 universal · L2 workflow · L3 NLP-specific) |
 | [`THEOPHYSICS_PRIMER.md`](THEOPHYSICS_PRIMER.md) | Framework anchor doc — every AI partner loads this at session start (Master Equation, 10 Laws, Boundary Proof, Theopoetic format, R-rules, glossary) |
 | [`BRAIN_README.md`](BRAIN_README.md) | The signpost README at `X:\` root — human front door for the drive itself |
+| [`EXPORTS_CONVENTION.md`](EXPORTS_CONVENTION.md) | Convention for final human-readable outputs under `X:\EXPORTS\` |
+| [`PACKETS_CONVENTION.md`](PACKETS_CONVENTION.md) | Convention for packetized work units with `PUBLIC`, `WORKING`, `MACHINE`, and `ARCHIVE` layers |
 | [`00_WORKFLOWS/`](00_WORKFLOWS/) | Workflow lane docs, healthcheck infrastructure, root maps, and the Codex prompt bank |
 | [`00_WORKFLOWS/prompts/x-drive-reorg/`](00_WORKFLOWS/prompts/x-drive-reorg/) | **The Codex prompts.** 4a–4g + Phase 5. Start at [`00_INDEX.md`](00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md). |
-| [`Backside/`](Backside/) | Phase logs (1a/1b/path-fix), dedup reference implementation (`phase2_dedup.ps1`), cleanup records |
+| [`Backside/`](Backside/) | Machinery layer: model registry, workflows, stations, prompt packs, dashboard MVP, station lab, conversion library, and cleanup logs |
+| [`Backside/STATION_WORKFLOW_COMPOSITION.md`](Backside/STATION_WORKFLOW_COMPOSITION.md) | Contract for one-task stations composed by workflows without duplicated station logic |
 | [`plan/`](plan/) | The plan doc that David approved 2026-05-16 — phased restructure with Option A (BIL move to X:) locked |
 | `RUN_*.bat` | Top-level click-buttons David uses today (FAP pipeline, public article refinery) |
 
@@ -65,14 +70,34 @@ Edits to map/convention/prompt files happen on `X:\` first (canonical source), t
 | 1b — Pull in D:\ targets | `D:\C4C-wiki`, `D:\FAP` → `X:\` | **Done** |
 | 2 — Redundancy sweep | Cross-X: dedup; symlinks resolved | **Done** (see `Backside/phase2_dedup.ps1` + `DEDUP_REPORT_20260516.md` on X:) |
 | 3 — Push to GitHub | This repo | **In progress (this commit)** |
-| 4a — Folder convention rollout | 15 READMEs + `00_DROP/` rename + `_AGENT_BRIEF` + `RUN_AGENT.bat` + `health_check.bat` per NLP | **Queued for Codex** |
+| 4a — Folder convention rollout | README/agent artifact pack + dry-run-first `apply_4a.ps1`; live X:\ application still pending | **Partial** |
 | 4b — Root simplification | Move 9 NLPs under `00_WORKFLOWS/`, junctions at old paths | Queued (depends on 4a) |
 | 4c — Batch-script path sweep | Rewrite `D:\BIL\*` + `D:\FAP` refs across 10 BIL files + Task Scheduler | Queued for Codex |
 | 4d — Intake engine | Watchdog + Mistral classifier + router | Queued for Codex |
-| 4e — PySide 6 dashboard | GUI for brain state | Queued (depends on 4d) |
-| 4f — Conversion layer | MarkItDown + Whisper + OCR unified | Queued for Codex |
+| 4e — Brain Dashboard / Workflow Composer | Dashboard MVP merged; revised composer scope still pending | **Partial** |
+| 4f — Conversion layer | Shared conversion library + workflow wrapper; smoke tested; full MarkItDown/Whisper/OCR/YouTube coverage still pending | **Partial** |
 | 4g — Root health-check master | `X:\CHECKS\RUN_ALL.bat` | Queued (depends on 4a) |
 | 5 — BIL + FAP migration | `robocopy /MOVE D:\BIL → X:\BIL` + Task Scheduler re-import | Queued (depends on 4c) |
+
+---
+
+## Current cleanup decision (2026-05-20)
+
+David overrode the earlier "keep live runtime roots visible" compromise. The repo now treats root-level workflow folders as transitional. The target visible root is:
+
+```text
+X:\
+  David\
+  GUI\
+  Conversions\
+  EXPORTS\
+  Backside\
+  README.md / ARCHITECTURE.md / THEOPHYSICS_PRIMER.md / RUN_*.bat
+```
+
+`EXPORTS` is the final reproducible output shelf: HTML, Excel, metadata, manifests, and anything needed to reproduce or verify the published artifact. `Conversions` is the active conversion front door. `GUI` is where user-facing dashboards and control panels live. `Backside` holds the runtime machinery.
+
+See [`ROOT_REORG_TARGET_2026-05-20.md`](ROOT_REORG_TARGET_2026-05-20.md) and [`Backside/ROOT_REORG_MOVE_MAP_2026-05-20.csv`](Backside/ROOT_REORG_MOVE_MAP_2026-05-20.csv).
 
 ---
 

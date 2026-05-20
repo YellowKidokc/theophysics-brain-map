@@ -11,15 +11,24 @@ Generator: Codex
   - `RUN_AGENT.bat`
   - `health_check.bat`
   - `prompts/.gitkeep`
-- `apply_4a.ps1`
+- `apply_4a.ps1` (replaced with dry-run-first safe migrator on 2026-05-16)
 
-## Junction commands queued in apply_4a.ps1
+## Intake junctions handled by apply_4a.ps1
 
 - `X:\axioms\00_INBOX_DROP_PAPERS_HERE -> X:\axioms\00_DROP`
 - `X:\knowledge-refinery\00_INTAKE -> X:\knowledge-refinery\00_DROP`
 - `X:\paper-proof-grader\INPUT -> X:\paper-proof-grader\00_DROP`
 - `X:\paper-proof-grader\DROP_PAPERS_HERE -> X:\paper-proof-grader\00_DROP`
 - `X:\session-handoff-drop\DROP_HERE -> X:\session-handoff-drop\00_DROP`
+
+The current script no longer calls `mklink` directly over live folders. Default mode is a dry run. Apply mode creates `00_DROP`, moves legacy intake children into it, archives same-name conflicts under `ARCHIVE\4a_migration_conflicts_<stamp>\`, renames the emptied legacy folder to `<name>.PRE_4A_MIGRATION_<stamp>`, then creates the compatibility junction.
+
+Usage:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\4a-output\apply_4a.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\4a-output\apply_4a.ps1 -Apply
+```
 
 ## Unresolved fields (`<TBD — David to confirm>`)
 
@@ -36,7 +45,7 @@ Because this mirror repo does not contain workflow runtime files (`X:\<nlp>\conf
 ## Notes
 
 - No deletions performed.
-- Junction preservation is represented in script form for local execution on David's Windows host.
+- Junction preservation is represented in dry-run-first script form for local execution on David's Windows host.
 - `paper-proof-grader` merge/dedupe of `INPUT` + `DROP_PAPERS_HERE` into `00_DROP` requires local data operation on X: and is not performed in this mirror artifact pack.
 
 - `_BACKSIDE_STRUCTURE_PROBE.md` — probe response on Backside topology (models/stations/workflows/_archive), with migration map and decision calls.

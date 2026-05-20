@@ -1,0 +1,27 @@
+current_path,target_path,category,move_phase,compatibility_required,notes
+X:\Backside\brain_dashboard,X:\GUI\brain-dashboard,gui,1,yes,Dashboard is user-facing and should be outside Backside.
+X:\Backside\conversion_lib,X:\Conversions\conversion-layer,conversion,1,yes,Conversion is a frequent front door.
+X:\models,X:\Backside\_models\downloaded,models,1,yes,Downloaded model weights should be behind the model front door.
+X:\Backside\models,X:\Backside\_models\legacy-model-layer,models,1,no,Existing model wrappers and health scripts become legacy model layer.
+X:\Preference Engine Build,X:\Backside\control-plane\Preference Engine Build,control-plane,2,yes,Git repo/control plane; update docs and safe.directory guidance.
+X:\knowledge-refinery,X:\Backside\workflows\knowledge-refinery.workflow,workflow,3,yes,Live workflow runtime with many hard-coded references.
+X:\paper-proof-grader,X:\Backside\workflows\paper-proof-grader.workflow,workflow,3,yes,Live workflow runtime and station output target.
+X:\session-handoff-drop,X:\Backside\workflows\session-handoff.workflow,workflow,3,yes,Session handoff pipeline.
+X:\link-pull-drop,X:\Backside\workflows\link-pull.workflow,workflow,3,yes,Link capture pipeline.
+X:\ai-portal-generator,X:\Backside\workflows\ai-portal-generator.workflow,workflow,3,yes,AI portal generator.
+X:\axioms,X:\Backside\workflows\axioms.workflow,workflow,3,yes,Axiom refresh workflow.
+X:\ollama,X:\Backside\services\ollama,service,2,yes,Local model service scripts.
+X:\github,X:\Backside\control-plane\github,control-plane,2,yes,Repo mirror shelf.
+X:\_LOGS,X:\Backside\_logs,logs,1,no,Logs should not be root-visible.
+X:\_brain_DEPRECATED_20260516,X:\Backside\_archive\root\_brain_DEPRECATED_20260516,archive,1,no,Deprecated root material.
+X:\00_CONVERSION,X:\Backside\_archive\root\00_CONVERSION,archive,1,no,Legacy conversion staging.
+X:\captures,X:\Backside\_state\captures,state,1,yes,Machine state.
+X:\digests,X:\Backside\_state\digests,state,1,yes,Machine state and handoff summaries.
+X:\embeddings,X:\Backside\_state\embeddings,state,1,yes,Embedding cache.
+X:\ratings,X:\Backside\_state\ratings,state,1,yes,Rating outputs/state.
+X:\C4C,X:\Backside\corpus\C4C,corpus,2,yes,Corpus content.
+X:\C4C-wiki,X:\Backside\corpus\C4C-wiki,corpus,2,yes,Corpus companion wiki.
+X:\FAP,X:\Backside\corpus\FAP,corpus,2,yes,Source corpus/scaffold distinct from workflow runtime.
+X:\BIL,X:\Backside\corpus\BIL,corpus,2,yes,BIL corpus placeholder/lane.
+X:\proof-architecture,X:\EXPORTS\proof-architecture,export,1,yes,Publish sink.
+X:\proof-explorer,X:\EXPORTS\proof-explorer,export,1,yes,Publish sink.

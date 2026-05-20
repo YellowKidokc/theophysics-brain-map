@@ -49,6 +49,11 @@ desktop.ini
 *.swp
 *.tmp
 *~
+_smoke*/
+**/_smoke*/
+**/_smoke_*/
+**/_smoke_exports/
+**/_smoke_state/
 
 # === Python / build artifacts (if any sneak in) ===
 __pycache__/

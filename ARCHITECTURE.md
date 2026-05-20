@@ -8,6 +8,21 @@ This is the live map of the X:\ brain. It mixes **current state (2026-05-16)** w
 
 X:\ is the NAS share `\\dlowenas\brain\` mounted as a drive. When this doc says "the brain," that's X:\ root.
 
+## 0. 2026-05-20 root target
+
+David's revised cleanup rule is that the root is a front door, not the runtime shelf.
+
+```text
+X:\
+  David\        human-facing notes and session entrypoints
+  GUI\          dashboards and control panels
+  Conversions\  active conversion front door
+  EXPORTS\      final reproducible HTML / Excel / metadata packages
+  Backside\     workflows, models, services, stations, control plane, state, archives
+```
+
+Root workflow folders such as `knowledge-refinery`, `paper-proof-grader`, `session-handoff-drop`, `models`, `ollama`, and `Preference Engine Build` are transitional until migrated according to `ROOT_REORG_TARGET_2026-05-20.md`.
+
 ---
 
 ## 1. System overview — what lives on X:\
