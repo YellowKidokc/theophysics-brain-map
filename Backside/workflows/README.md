@@ -79,6 +79,7 @@ A workflow can have a root click-button or dashboard tile, but the actual runtim
 | `handoff-session.workflow` | `X:\session-handoff-drop` |
 | `pull-link.workflow` | `X:\link-pull-drop` |
 | `brain-dashboard.workflow` | dashboard launcher/control surface |
+| `lossless-context.workflow` | Markdown -> semantic address + JSON/HTML audit snapshot before vectorization |
 
 Do not move live folders here until the path sweep and junction plan are ready.
 
