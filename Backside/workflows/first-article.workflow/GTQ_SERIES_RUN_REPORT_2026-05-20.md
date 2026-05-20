@@ -53,11 +53,41 @@ X:\EXPORTS\first-article-workflow-series\20260520-155258-gtq-root-series\semanti
 X:\EXPORTS\first-article-workflow-series\20260520-155258-gtq-root-series\semantic-space\semantic-space.json
 ```
 
+## Series Stack
+
+Generated:
+
+```text
+X:\EXPORTS\first-article-workflow-series\20260520-155258-gtq-root-series\STACK
+```
+
+Files:
+
+```text
+simple-summary.md
+cumulative-executive-summary.md
+lossless-series-index.md
+cumulative-math-translation.md
+contradiction-scan.md
+series-paper-draft.md
+stack-manifest.json
+```
+
+Stack result:
+
+```text
+Articles: 26
+Math candidates: 1215
+Contradiction flags: 15
+```
+
+Boundary: contradiction scan is heuristic and expected to overflag. Math candidates are broad and include math-flavored prose; next refinement should split equations from formal claims and prose signals.
+
 ## Durable Runner
 
 Added:
 
 ```text
 Backside\workflows\first-article.workflow\RUN_GTQ_ROOT_SERIES.bat
+Backside\workflows\first-article.workflow\RUN_STACK_GTQ_SERIES.bat
 ```
-

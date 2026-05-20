@@ -43,6 +43,18 @@ GTQ root-series runner:
 X:\Backside\workflows\first-article.workflow\RUN_GTQ_ROOT_SERIES.bat
 ```
 
+Stack an already-generated batch into cumulative series outputs:
+
+```powershell
+python X:\Backside\workflows\first-article.workflow\series_stack.py --batch-root "X:\EXPORTS\first-article-workflow-series\<batch_id>"
+```
+
+Current GTQ stack runner:
+
+```text
+X:\Backside\workflows\first-article.workflow\RUN_STACK_GTQ_SERIES.bat
+```
+
 ## Outputs
 
 Final reproducible exports go to:
@@ -71,3 +83,5 @@ X:\Backside\_state\first-article-workflow\<run_id>\
 ## Boundary
 
 Image notes use file metadata, dimensions, alt/title text, and nearby caption/quote context. They do not yet use a true image-caption model. That is intentional: the workflow should not pretend metadata is vision.
+
+The cumulative math stack is a staging layer. It intentionally catches broad math-like prose and must be refined before being treated as formal equation extraction.
