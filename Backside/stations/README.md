@@ -40,6 +40,10 @@ math-clarify.station
 | `math-clarify.station` | Math Translation Layer |
 | `seven-questions.station` | refined 7QS runner; Foundations / Reversals / Evidence |
 | `axiom-candidates.station` | refined 7QS JSON -> axiom candidates |
+| `master-equation-canon.station` | Master Equation / formal layer canon index |
+| `trinity-canon.station` | Trinity / Resurrection / Lean isomorphism canon index |
+| `fruits-spirit-canon.station` | Fruits of Spirit canon/equation index |
+| `operators-canon.station` | Grace / Justice / Mercy operator index |
 
 Do not promote a station to workflow just because it is useful. Promote only when it has its own intake, run lifecycle, output contract, and dashboard tile.
 
