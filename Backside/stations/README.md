@@ -43,6 +43,18 @@ math-clarify.station
 
 Do not promote a station to workflow just because it is useful. Promote only when it has its own intake, run lifecycle, output contract, and dashboard tile.
 
+## Composition rule
+
+Do not copy station logic into workflow folders. Workflows reference stations by ID through `dependencies.json` and `configs/*.json`.
+
+The canonical composition contract is:
+
+```text
+Backside\STATION_WORKFLOW_COMPOSITION.md
+```
+
+If a workflow needs different behavior, add parameters, create a new station ID, or add a workflow-specific prompt overlay. Do not create a private fork of `station.py` inside the workflow.
+
 ## Verification rule
 
 A station is not real just because the folder exists. A station becomes reusable only when it has:

@@ -22,7 +22,7 @@ Build verified stations first. Workflows compose stations rather than cloning th
 
 The packet folder can be public-addressable, but only its `PUBLIC/` layer is consumer-facing.
 
-See `PACKETS_CONVENTION.md` for the packet contract.
+See `PACKETS_CONVENTION.md` for the packet contract and `Backside\STATION_WORKFLOW_COMPOSITION.md` for the station/workflow composition contract.
 
 ---
 
@@ -267,6 +267,8 @@ GUI polls `_state/active_runs.json` for the dashboard view, drills into individu
 ```
 
 The root health-check (`X:\CHECKS\RUN_ALL.bat`) reads every `dependencies.json` and verifies every claimed station/service is reachable.
+
+Workflow configs must reference station IDs, not station folders copied into workflow folders. A workflow can add orchestration and prompt overlays, but station implementation stays canonical under `Backside\stations\<station-id>.station\`.
 
 ---
 

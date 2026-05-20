@@ -9,6 +9,23 @@ Workflows belong in Backside because they are machinery. David should see their 
 
 A workflow is an ordered recipe that calls verified stations. It should not reimplement station logic inline.
 
+## Composition rule
+
+Workflows consume stations by contract:
+
+```text
+dependencies.json      declares stations the workflow may call
+configs/default.json   declares the ordered station recipe
+```
+
+The detailed rule lives at:
+
+```text
+Backside\STATION_WORKFLOW_COMPOSITION.md
+```
+
+If the same capability is needed in 10 or 20 workflows, that is evidence for one shared station, not 10 or 20 copied implementations.
+
 ## Naming
 
 Every workflow folder ends in `.workflow`:
@@ -31,6 +48,7 @@ pull-link.workflow
   health_check.bat
   pipeline.py
   dependencies.json
+  workflow.dependencies.schema.json (repo-level schema)
   configs\
     default.json
   STATE\
