@@ -31,6 +31,18 @@ Or run one explicit file:
 python X:\Backside\workflows\first-article.workflow\pipeline.py --input "path\to\file.html"
 ```
 
+Batch a folder:
+
+```powershell
+python X:\Backside\workflows\first-article.workflow\pipeline.py --input-root "path\to\folder" --glob "gtq-*.html"
+```
+
+GTQ root-series runner:
+
+```text
+X:\Backside\workflows\first-article.workflow\RUN_GTQ_ROOT_SERIES.bat
+```
+
 ## Outputs
 
 Final reproducible exports go to:
@@ -59,4 +71,3 @@ X:\Backside\_state\first-article-workflow\<run_id>\
 ## Boundary
 
 Image notes use file metadata, dimensions, alt/title text, and nearby caption/quote context. They do not yet use a true image-caption model. That is intentional: the workflow should not pretend metadata is vision.
-

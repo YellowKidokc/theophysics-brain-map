@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import csv
 import re
 import shutil
 import sys
@@ -122,10 +123,16 @@ def add_frontmatter_if_missing(markdown: str, fields: dict[str, str]) -> str:
         return markdown
     lines = ["---"]
     for key, value in fields.items():
-        safe = str(value).replace('"', "'")
+        safe = sanitize_yaml_scalar(value)
         lines.append(f'{key}: "{safe}"')
     lines.extend(["---", "", markdown.strip()])
     return "\n".join(lines) + "\n"
+
+
+def sanitize_yaml_scalar(value: object) -> str:
+    text = str(value).replace('"', "'")
+    text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]", "", text)
+    return text.strip()
 
 
 def describe_standalone_image(path: Path) -> dict[str, Any]:
@@ -413,9 +420,104 @@ def process_drop_folder(drop: Path, export_root: Path, state_root: Path, vault_i
     return outputs
 
 
+def process_input_root(
+    input_root: Path,
+    glob: str,
+    export_root: Path,
+    state_root: Path,
+    vault_id: str,
+    embeddings: str,
+    limit: int | None,
+) -> Path:
+    batch_id = f"{datetime.now().strftime('%Y%m%d-%H%M%S')}_{slugify(input_root.name)}"
+    batch_export = export_root / batch_id
+    batch_state = state_root / batch_id
+    batch_export.mkdir(parents=True, exist_ok=True)
+    batch_state.mkdir(parents=True, exist_ok=True)
+    files = [path for path in sorted(input_root.glob(glob)) if path.is_file()]
+    if limit:
+        files = files[:limit]
+
+    rows: list[dict[str, Any]] = []
+    for index, path in enumerate(files, start=1):
+        print(f"[{index}/{len(files)}] {path.name}")
+        try:
+            out = run_workflow(path, batch_export, batch_state, vault_id, embeddings)
+            manifest = json.loads((out / "manifest.json").read_text(encoding="utf-8"))
+            image_station = next((row for row in manifest["stations"] if row.get("station") == "image-notes"), {})
+            rows.append(
+                {
+                    "ordinal": index,
+                    "name": path.name,
+                    "source": str(path),
+                    "status": "PASS",
+                    "export_path": str(out),
+                    "address": manifest.get("address", ""),
+                    "vector": manifest.get("vector", ""),
+                    "hash": manifest.get("hash", ""),
+                    "images": image_station.get("count", ""),
+                    "error": "",
+                }
+            )
+        except Exception as exc:
+            rows.append(
+                {
+                    "ordinal": index,
+                    "name": path.name,
+                    "source": str(path),
+                    "status": "FAIL",
+                    "export_path": "",
+                    "address": "",
+                    "vector": "",
+                    "hash": "",
+                    "images": "",
+                    "error": repr(exc),
+                }
+            )
+
+    write_batch_outputs(batch_export, batch_state, input_root, glob, rows)
+    return batch_export
+
+
+def write_batch_outputs(batch_export: Path, batch_state: Path, input_root: Path, glob: str, rows: list[dict[str, Any]]) -> None:
+    json_path = batch_export / "batch-results.json"
+    csv_path = batch_export / "batch-results.csv"
+    summary_path = batch_export / "BATCH_SUMMARY.md"
+    json_path.write_text(json.dumps(rows, indent=2), encoding="utf-8")
+    with csv_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0].keys()) if rows else ["status"])
+        writer.writeheader()
+        writer.writerows(rows)
+
+    passed = sum(1 for row in rows if row["status"] == "PASS")
+    failed = sum(1 for row in rows if row["status"] == "FAIL")
+    lines = [
+        "# First Article Workflow Batch",
+        "",
+        f"- Batch root: `{batch_export}`",
+        f"- State root: `{batch_state}`",
+        f"- Source root: `{input_root}`",
+        f"- Glob: `{glob}`",
+        f"- Files: {len(rows)}",
+        f"- Passed: {passed}",
+        f"- Failed: {failed}",
+        f"- Created: {datetime.now().isoformat(timespec='seconds')}",
+        "",
+        "## Results",
+        "",
+    ]
+    for row in rows:
+        lines.append(f"- [{row['status']}] {row['name']} -> `{row['export_path']}` :: {row['vector']}")
+    summary_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+    batch_state.mkdir(parents=True, exist_ok=True)
+    (batch_state / "batch-results.json").write_text(json.dumps(rows, indent=2), encoding="utf-8")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run the first article workflow: conversion -> summary -> image notes -> lossless artifact.")
     parser.add_argument("--input", type=Path, help="Source Markdown, HTML, text, or image file.")
+    parser.add_argument("--input-root", type=Path, help="Batch source folder. Uses --glob.")
+    parser.add_argument("--glob", default="*.html", help="Batch glob used with --input-root.")
     parser.add_argument("--drop", type=Path, default=DEFAULT_DROP, help="Drop folder to process when --input is omitted.")
     parser.add_argument("--export-root", type=Path, default=DEFAULT_EXPORT_ROOT)
     parser.add_argument("--state-root", type=Path, default=DEFAULT_STATE_ROOT)
@@ -430,6 +532,10 @@ def main() -> int:
     if args.input:
         out = run_workflow(args.input, args.export_root, args.state_root, args.vault_id, args.embeddings)
         print(f"Export written: {out}")
+        return 0
+    if args.input_root:
+        out = process_input_root(args.input_root, args.glob, args.export_root, args.state_root, args.vault_id, args.embeddings, args.limit)
+        print(f"Batch export written: {out}")
         return 0
 
     outputs = process_drop_folder(args.drop, args.export_root, args.state_root, args.vault_id, args.embeddings, args.limit)
