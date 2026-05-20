@@ -9,6 +9,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from openpyxl import Workbook
+from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.utils import get_column_letter
+
 
 SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
 EQUATION_BLOCK_RE = re.compile(r"```text\s*(.*?)\s*```", re.DOTALL)
@@ -341,6 +345,161 @@ def render_series_paper(records: list[dict[str, Any]], executive: str, math_laye
     )
 
 
+def write_workbook(
+    out: Path,
+    records: list[dict[str, Any]],
+    executive: str,
+    simple: str,
+    lossless_rows: list[dict[str, Any]],
+    math_rows: list[dict[str, Any]],
+    contradiction_flags: list[dict[str, Any]],
+) -> Path:
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Dashboard"
+    vector_counts = Counter(record["vector"] for record in records)
+    ws.append(["GTQ Series Stack Workbook"])
+    ws.append(["Generated", datetime.now().isoformat(timespec="seconds")])
+    ws.append(["Articles", len(records)])
+    ws.append(["Math candidates", len(math_rows)])
+    ws.append(["Contradiction flags", len(contradiction_flags)])
+    ws.append([])
+    ws.append(["Vector", "Count"])
+    for vector, count in vector_counts.most_common():
+        ws.append([vector, count])
+
+    add_text_sheet(wb, "Simple Summary", simple)
+    add_text_sheet(wb, "Executive Summary", executive)
+    add_table_sheet(
+        wb,
+        "Articles",
+        [
+            {
+                "ordinal": record["ordinal"],
+                "name": record["name"],
+                "title": title_from_record(record),
+                "vector": record["vector"],
+                "hash": record["hash"],
+                "address": record["address"],
+                "export_dir": record["export_dir"],
+            }
+            for record in records
+        ],
+    )
+    add_table_sheet(wb, "Lossless Index", lossless_rows)
+    add_table_sheet(wb, "Math Candidates", math_rows)
+    add_table_sheet(
+        wb,
+        "Contradiction Flags",
+        flatten_contradiction_flags(contradiction_flags),
+    )
+    add_table_sheet(
+        wb,
+        "Open Threads",
+        build_open_thread_rows(records),
+    )
+
+    for sheet in wb.worksheets:
+        style_sheet(sheet)
+    path = out / "gtq-series-stack.xlsx"
+    wb.save(path)
+    return path
+
+
+def add_text_sheet(wb: Workbook, title: str, text: str) -> None:
+    ws = wb.create_sheet(title[:31])
+    ws.append(["section", "text"])
+    current = "Document"
+    buffer: list[str] = []
+    for line in text.splitlines():
+        if line.startswith("#"):
+            if buffer:
+                ws.append([current, "\n".join(buffer).strip()])
+                buffer = []
+            current = line.strip("# ").strip() or current
+        else:
+            buffer.append(line)
+    if buffer:
+        ws.append([current, "\n".join(buffer).strip()])
+
+
+def add_table_sheet(wb: Workbook, title: str, rows: list[dict[str, Any]]) -> None:
+    ws = wb.create_sheet(title[:31])
+    if not rows:
+        ws.append(["status"])
+        ws.append(["no rows"])
+        return
+    headers = list(rows[0].keys())
+    ws.append(headers)
+    for row in rows:
+        ws.append([safe_cell(row.get(header, "")) for header in headers])
+
+
+def safe_cell(value: Any) -> Any:
+    if value is None:
+        return ""
+    if isinstance(value, (str, int, float, bool)):
+        text = value
+    else:
+        text = json.dumps(value, ensure_ascii=False)
+    if isinstance(text, str) and len(text) > 32000:
+        return text[:31900] + "\n[TRUNCATED]"
+    return text
+
+
+def flatten_contradiction_flags(flags: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for flag in flags:
+        rows.append(
+            {
+                "term": flag.get("term", ""),
+                "severity": flag.get("severity", ""),
+                "affirm_count": flag.get("affirm_count", 0),
+                "negate_count": flag.get("negate_count", 0),
+                "affirm_examples": "; ".join(example.get("sentence", "") for example in flag.get("affirm_examples", [])),
+                "negate_examples": "; ".join(example.get("sentence", "") for example in flag.get("negate_examples", [])),
+                "repair": "classify as true contradiction, regime distinction, rhetorical contrast, or sequence change",
+            }
+        )
+    return rows
+
+
+def build_open_thread_rows(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for record in records:
+        for thread in record["lossless"].get("open_threads", []):
+            rows.append(
+                {
+                    "ordinal": record["ordinal"],
+                    "article": record["name"],
+                    "title": title_from_record(record),
+                    "thread": thread,
+                    "export_dir": record["export_dir"],
+                }
+            )
+    return rows
+
+
+def style_sheet(ws) -> None:
+    header_fill = PatternFill("solid", fgColor="1F4E78")
+    header_font = Font(color="FFFFFF", bold=True)
+    for cell in ws[1]:
+        cell.fill = header_fill
+        cell.font = header_font
+        cell.alignment = Alignment(wrap_text=True, vertical="top")
+    ws.freeze_panes = "A2"
+    for row in ws.iter_rows():
+        for cell in row:
+            cell.alignment = Alignment(wrap_text=True, vertical="top")
+    for column_cells in ws.columns:
+        letter = get_column_letter(column_cells[0].column)
+        max_len = 12
+        for cell in column_cells[:80]:
+            value = "" if cell.value is None else str(cell.value)
+            max_len = max(max_len, min(len(value), 80))
+        ws.column_dimensions[letter].width = min(max_len + 2, 70)
+
+
 def first_nonempty_sentence(text: str) -> str:
     for sentence in SENTENCE_RE.split(re.sub(r"\s+", " ", text).strip()):
         if len(sentence.strip()) > 45:
@@ -386,6 +545,7 @@ def main() -> int:
     (out / "lossless-series-index.json").write_text(json.dumps(lossless_rows, indent=2), encoding="utf-8")
     (out / "math-candidates.json").write_text(json.dumps(math_rows, indent=2), encoding="utf-8")
     (out / "contradiction-flags.json").write_text(json.dumps(contradiction_flags, indent=2), encoding="utf-8")
+    workbook_path = write_workbook(out, records, executive, simple, lossless_rows, math_rows, contradiction_flags)
     manifest = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
         "batch_root": str(batch_root),
@@ -393,6 +553,7 @@ def main() -> int:
         "articles": len(records),
         "math_candidates": len(math_rows),
         "contradiction_flags": len(contradiction_flags),
+        "workbook": str(workbook_path),
         "files": [
             "simple-summary.md",
             "cumulative-executive-summary.md",
@@ -400,6 +561,7 @@ def main() -> int:
             "cumulative-math-translation.md",
             "contradiction-scan.md",
             "series-paper-draft.md",
+            "gtq-series-stack.xlsx",
         ],
     }
     (out / "stack-manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
