@@ -1,7 +1,7 @@
 @echo off
 setlocal
 set WORKFLOW_ROOT=%~dp0
-set LIB_ROOT=X:\Backside\conversion_lib
+set LIB_ROOT=X:\Conversions\conversion-layer
 set PYTHONPATH=%LIB_ROOT%\src
 set CONFIG=%LIB_ROOT%\config\x_drive.yaml
 
@@ -17,4 +17,3 @@ for %%F in ("%WORKFLOW_ROOT%00_DROP\*") do (
 )
 
 echo Conversion layer complete.
-

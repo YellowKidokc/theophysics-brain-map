@@ -56,7 +56,7 @@ A workflow can have a root click-button or dashboard tile, but the actual runtim
 |---|---|
 | `grade-paper.workflow` | `X:\paper-proof-grader` |
 | `refresh-axiom-snapshot.workflow` | `X:\axioms` |
-| `route-and-convert.workflow` | `X:\knowledge-refinery` + `Backside\conversion_lib` |
+| `route-and-convert.workflow` | `X:\Backside\workflows\knowledge-refinery.workflow` + `X:\Conversions\conversion-layer` |
 | `build-ai-portal.workflow` | `X:\ai-portal-generator` |
 | `handoff-session.workflow` | `X:\session-handoff-drop` |
 | `pull-link.workflow` | `X:\link-pull-drop` |

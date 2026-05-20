@@ -2,7 +2,7 @@ param(
   [Parameter(Mandatory=$true, Position=0)]
   [string]$Source,
   [string]$Out,
-  [string]$Config = "X:\Backside\conversion_lib\config\x_drive.yaml",
+  [string]$Config = "X:\Conversions\conversion-layer\config\x_drive.yaml",
   [switch]$Detect
 )
 
@@ -17,4 +17,3 @@ if ($Config) { $argsList += @("--config", $Config) }
 if ($Out) { $argsList += @("--out", $Out) }
 
 python @argsList
-

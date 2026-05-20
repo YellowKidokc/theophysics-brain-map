@@ -6,7 +6,7 @@ canonical Markdown exports under `X:\EXPORTS\conversion-layer`.
 This is the front-door wrapper around:
 
 ```text
-X:\Backside\conversion_lib
+X:\Conversions\conversion-layer
 ```
 
 The workflow does not own finished artifacts. It only accepts inputs, runs the
@@ -26,4 +26,3 @@ ARCHIVE\   processed source files
 ```powershell
 X:\00_WORKFLOWS\conversion-layer\RUN.bat
 ```
-

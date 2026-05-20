@@ -13,6 +13,7 @@ The map of the Theophysics brain — David Lowe's `X:\` working drive. Maps, con
 
 | Path | What it is |
 |---|---|
+| [`ROOT_REORG_TARGET_2026-05-20.md`](ROOT_REORG_TARGET_2026-05-20.md) | The new root cleanup contract: `David`, `GUI`, `Conversions`, `EXPORTS`, and `Backside` |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | The X:\ brain system map — 11 Mermaid diagrams of zones, workflows, intake/output flow |
 | [`FOLDER_CONVENTIONS.md`](FOLDER_CONVENTIONS.md) | The 3-layer folder contract every folder on X:\ honors (L1 universal · L2 workflow · L3 NLP-specific) |
 | [`THEOPHYSICS_PRIMER.md`](THEOPHYSICS_PRIMER.md) | Framework anchor doc — every AI partner loads this at session start (Master Equation, 10 Laws, Boundary Proof, Theopoetic format, R-rules, glossary) |
@@ -75,6 +76,26 @@ Edits to map/convention/prompt files happen on `X:\` first (canonical source), t
 | 4f — Conversion layer | Shared conversion library + workflow wrapper; smoke tested; full MarkItDown/Whisper/OCR/YouTube coverage still pending | **Partial** |
 | 4g — Root health-check master | `X:\CHECKS\RUN_ALL.bat` | Queued (depends on 4a) |
 | 5 — BIL + FAP migration | `robocopy /MOVE D:\BIL → X:\BIL` + Task Scheduler re-import | Queued (depends on 4c) |
+
+---
+
+## Current cleanup decision (2026-05-20)
+
+David overrode the earlier "keep live runtime roots visible" compromise. The repo now treats root-level workflow folders as transitional. The target visible root is:
+
+```text
+X:\
+  David\
+  GUI\
+  Conversions\
+  EXPORTS\
+  Backside\
+  README.md / ARCHITECTURE.md / THEOPHYSICS_PRIMER.md / RUN_*.bat
+```
+
+`EXPORTS` is the final reproducible output shelf: HTML, Excel, metadata, manifests, and anything needed to reproduce or verify the published artifact. `Conversions` is the active conversion front door. `GUI` is where user-facing dashboards and control panels live. `Backside` holds the runtime machinery.
+
+See [`ROOT_REORG_TARGET_2026-05-20.md`](ROOT_REORG_TARGET_2026-05-20.md) and [`Backside/ROOT_REORG_MOVE_MAP_2026-05-20.csv`](Backside/ROOT_REORG_MOVE_MAP_2026-05-20.csv).
 
 ---
 

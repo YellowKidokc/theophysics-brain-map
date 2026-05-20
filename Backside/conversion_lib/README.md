@@ -27,7 +27,7 @@ MarkItDown/Whisper/OCR when those optional dependencies are installed.
 ## Quick Use
 
 ```powershell
-$env:PYTHONPATH="D:\GitHub\theophysics-brain-map\Backside\conversion_lib\src"
+$env:PYTHONPATH="X:\Conversions\conversion-layer\src"
 python -m theophysics_conversion.convert "C:\path\article.html" --export-root "X:\EXPORTS\conversion-layer"
 ```
 
@@ -42,4 +42,3 @@ python -m theophysics_conversion.convert --detect "C:\path\article.html"
 The accessible, medium, academic, math, and audit layers should not parse raw
 HTML differently each time. They should all consume the same canonical Markdown
 and compare that Markdown back against the original extraction.
-

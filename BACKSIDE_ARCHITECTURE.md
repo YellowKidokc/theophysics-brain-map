@@ -2,9 +2,11 @@
 
 **Owner:** David Lowe · canon-locked 2026-05-16
 **Status:** live · phased migration from current X:\ layout
-**Last updated:** 2026-05-16
+**Last updated:** 2026-05-20
 
-The 3-tier topology under `X:\Backside\`. Models are atoms, stations are reusable skills, workflows are end-to-end pipelines, all bound by env-var portability and a uniform state contract.
+The topology under `X:\Backside\`. Models are atoms, stations are reusable skills, workflows are end-to-end pipelines, services are local runtime dependencies, and control-plane folders hold repos/configuration. All are bound by env-var portability and a uniform state contract.
+
+As of 2026-05-20, `Backside` is no longer only the archive/system bucket. It is the canonical home for machine-facing runtime. The X root is the front door; `GUI`, `Conversions`, `EXPORTS`, and `David` are the main outside surfaces.
 
 ---
 
@@ -272,14 +274,20 @@ The root health-check (`X:\CHECKS\RUN_ALL.bat`) reads every `dependencies.json` 
 
 | Current path | New path |
 |---|---|
+| `X:\Backside\brain_dashboard\` | `X:\GUI\brain-dashboard\` |
+| `X:\Backside\conversion_lib\` | `X:\Conversions\conversion-layer\` |
 | `X:\paper-proof-grader\` | `Backside/workflows/grade-paper.workflow/` |
 | `X:\axioms\` | `Backside/workflows/refresh-axiom-snapshot.workflow/` (logic → `stations/axiom-hit.station/`) |
 | `X:\knowledge-refinery\` | `Backside/workflows/route-and-convert.workflow/` (model-stations → real `stations/`) |
 | `X:\ai-portal-generator\` | `Backside/workflows/build-ai-portal.workflow/` |
 | `X:\session-handoff-drop\` | `Backside/workflows/handoff-session.workflow/` |
 | `X:\link-pull-drop\` | `Backside/workflows/pull-link.workflow/` |
-| `X:\models\` | `Backside/_models/` |
-| `X:\proof-architecture\`, `X:\proof-explorer\` | stay at `X:\` root (these are output sinks, not workflows) |
+| `X:\models\` | `Backside/_models/downloaded/` |
+| `X:\Backside\models\` | `Backside/_models/legacy-model-layer/` |
+| `X:\Preference Engine Build\` | `Backside/control-plane/Preference Engine Build/` |
+| `X:\github\` | `Backside/control-plane/github/` |
+| `X:\ollama\` | `Backside/services/ollama/` |
+| `X:\proof-architecture\`, `X:\proof-explorer\` | `X:\EXPORTS\proof-architecture`, `X:\EXPORTS\proof-explorer` |
 | `X:\Backside\` (current archive) | `Backside/_archive/` |
 | `D:\GitHub\Math-Translation-Layer\` | `Backside/stations/math-clarify.station/` (move + repackage) |
 

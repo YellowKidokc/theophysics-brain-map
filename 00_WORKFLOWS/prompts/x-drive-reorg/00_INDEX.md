@@ -20,6 +20,7 @@
 | 4f | [Conversion layer](4f_conversion_layer.md) | MarkItDown + Whisper + YouTube + OCR + TTS unified as library + standalone NLP. Any format → canonical markdown | Medium | — |
 | 4g | [Root health-check master](4g_root_checks_master.md) | `X:\CHECKS\RUN_ALL.bat` — orchestrates per-NLP `health_check.bat` + shared services + framework anchors → single report | Low | 4a complete |
 | 5 | [BIL + FAP migration](5_bil_fap_migration.md) | `robocopy /MOVE D:\BIL X:\BIL` + Task Scheduler re-import, verify FAP sync | High | 4c complete |
+| 6 | [2026-05-20 root reorg execution](6_root_reorg_execute_2026-05-20.md) | Apply the new root contract: `David`, `GUI`, `Conversions`, `EXPORTS`, `Backside`; move models/workflows/control-plane/state behind the proper front doors | High | 4a path inventory + compatibility plan |
 
 **Template referenced by 4a:** [`_AGENT_BRIEF_TEMPLATE.md`](_AGENT_BRIEF_TEMPLATE.md) — per-NLP agent-brief source.
 **Framework anchor referenced everywhere:** [`X:\THEOPHYSICS_PRIMER.md`](../../../THEOPHYSICS_PRIMER.md) — load this in every AI session.
