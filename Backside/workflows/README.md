@@ -80,6 +80,7 @@ A workflow can have a root click-button or dashboard tile, but the actual runtim
 | `pull-link.workflow` | `X:\link-pull-drop` |
 | `brain-dashboard.workflow` | dashboard launcher/control surface |
 | `lossless-context.workflow` | Markdown -> semantic address + JSON/HTML audit snapshot before vectorization |
+| `first-article.workflow` | Markdown/HTML/image -> conversion -> summary/overview/math/image notes -> lossless context packet |
 
 Do not move live folders here until the path sweep and junction plan are ready.
 
