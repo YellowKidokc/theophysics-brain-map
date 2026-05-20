@@ -82,6 +82,7 @@ A workflow can have a root click-button or dashboard tile, but the actual runtim
 | `lossless-context.workflow` | Markdown -> semantic address + JSON/HTML audit snapshot before vectorization |
 | `first-article.workflow` | Markdown/HTML/image -> conversion -> summary/overview/math/image notes -> lossless context packet |
 | `chi-tagging.workflow` | Cannon canon sources -> chi-variable reference index -> database tagging guardrail |
+| `semantic-snapshot.workflow` | Source/lossless/tags/grader/axiom map -> Master Equation UUID route -> station shortcuts |
 
 Do not move live folders here until the path sweep and junction plan are ready.
 
