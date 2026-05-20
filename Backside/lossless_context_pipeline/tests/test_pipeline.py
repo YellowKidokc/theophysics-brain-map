@@ -50,6 +50,13 @@ def test_protocol_like_artifact_scores_authority_trust_and_coherence():
     assert vector_string(vector) == "G3M3E0S0T3K3R3Q0F3C3"
 
 
+def test_entropy_topic_does_not_force_artifact_entropy():
+    text = "This orderly article discusses entropy, collapse, risk, coherence, and kill conditions with clear sections."
+    vector = score_vector(["CLAIM", "KILL_CONDITION", "DOMAIN_SHIFT"], domain_count=3, entity_count=4, text=text)
+
+    assert vector["E"] == 0
+
+
 def test_audience_frontmatter_aliases_to_access(tmp_path):
     md = tmp_path / "pilot.md"
     md.write_text(
