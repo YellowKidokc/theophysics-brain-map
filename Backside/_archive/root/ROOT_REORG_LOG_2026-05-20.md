@@ -86,3 +86,10 @@ Started: 2026-05-20T12:15:39.6146489-05:00
 - ROOT: RUN_FAP_ARTICLE_PIPELINE.bat
 - ROOT: RUN_PUBLIC_ARTICLE_REFINERY.bat
 - ROOT: THEOPHYSICS_PRIMER.md
+
+## GUI promotion 2026-05-20
+- COPIED FROM REPO: D:\GitHub\theophysics-brain-map\Backside\brain_dashboard -> X:\GUI\brain-dashboard
+- ADDED: X:\GUI\brain-dashboard\RUN.bat
+- VERIFIED: python -m pytest tests passed from X:\GUI\brain-dashboard
+- VERIFIED: brain-dashboard --headless-smoke-test exited cleanly from X:\GUI\brain-dashboard
+- VERIFIED: visible Brain Dashboard launched from X:\GUI\brain-dashboard\RUN.bat
