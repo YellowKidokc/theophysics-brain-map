@@ -1,0 +1,3249 @@
+{
+  "generated_at_utc": "2026-05-20T17:16:56.810544+00:00",
+  "host": "8ec39baeb794",
+  "surfaces": [
+    {
+      "label": "David",
+      "source_of_truth_path": "X:\\\\David",
+      "resolved_path": "/workspace/theophysics-brain-map/David",
+      "status": "unavailable",
+      "last_modified_utc": null,
+      "items": []
+    },
+    {
+      "label": "GUI",
+      "source_of_truth_path": "X:\\\\GUI",
+      "resolved_path": "/workspace/theophysics-brain-map/GUI",
+      "status": "unavailable",
+      "last_modified_utc": null,
+      "items": []
+    },
+    {
+      "label": "Conversions",
+      "source_of_truth_path": "X:\\\\Conversions",
+      "resolved_path": "/workspace/theophysics-brain-map/Conversions",
+      "status": "unavailable",
+      "last_modified_utc": null,
+      "items": []
+    },
+    {
+      "label": "EXPORTS",
+      "source_of_truth_path": "X:\\\\EXPORTS",
+      "resolved_path": "/workspace/theophysics-brain-map/EXPORTS",
+      "status": "ok",
+      "last_modified_utc": "2026-05-20T17:16:05.987184+00:00",
+      "items": [
+        {
+          "name": "brain-overview",
+          "relative_path": "EXPORTS/brain-overview",
+          "kind": "dir",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:16:05.987184+00:00",
+          "source_of_truth_path": "X:\\\\EXPORTS\\brain-overview"
+        }
+      ]
+    },
+    {
+      "label": "Backside",
+      "source_of_truth_path": "X:\\\\Backside",
+      "resolved_path": "/workspace/theophysics-brain-map/Backside",
+      "status": "ok",
+      "last_modified_utc": "2026-05-20T17:16:05.987184+00:00",
+      "items": [
+        {
+          "name": "brain_dashboard",
+          "relative_path": "Backside/brain_dashboard",
+          "kind": "dir",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:52.999107+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\brain_dashboard"
+        },
+        {
+          "name": "C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+          "relative_path": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\C4C_FAP_MIGRATION_NOTE_2026-05-13.md"
+        },
+        {
+          "name": "overview_generator",
+          "relative_path": "Backside/overview_generator",
+          "kind": "dir",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:16:55.103504+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\overview_generator"
+        },
+        {
+          "name": "PHASE1_PATH_FIX_LOG_20260516.md",
+          "relative_path": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\PHASE1_PATH_FIX_LOG_20260516.md"
+        },
+        {
+          "name": "PHASE1A_LOG_20260516.md",
+          "relative_path": "Backside/PHASE1A_LOG_20260516.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\PHASE1A_LOG_20260516.md"
+        },
+        {
+          "name": "PHASE1B_LOG_20260516.md",
+          "relative_path": "Backside/PHASE1B_LOG_20260516.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\PHASE1B_LOG_20260516.md"
+        },
+        {
+          "name": "phase2_dedup.ps1",
+          "relative_path": "Backside/phase2_dedup.ps1",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\phase2_dedup.ps1"
+        },
+        {
+          "name": "README.md",
+          "relative_path": "Backside/README.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\README.md"
+        },
+        {
+          "name": "ROOT_CLEANUP_LOG_2026-05-13.md",
+          "relative_path": "Backside/ROOT_CLEANUP_LOG_2026-05-13.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "X:\\\\Backside\\ROOT_CLEANUP_LOG_2026-05-13.md"
+        }
+      ]
+    },
+    {
+      "label": "Repo",
+      "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map",
+      "resolved_path": "/workspace/theophysics-brain-map",
+      "status": "ok",
+      "last_modified_utc": "2026-05-20T17:16:05.987184+00:00",
+      "items": [
+        {
+          "name": ".git",
+          "relative_path": ".git",
+          "kind": "dir",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:53.047107+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\.git"
+        },
+        {
+          "name": ".gitignore",
+          "relative_path": ".gitignore",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.218956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\.gitignore"
+        },
+        {
+          "name": "00_WORKFLOWS",
+          "relative_path": "00_WORKFLOWS",
+          "kind": "dir",
+          "category": "workflows",
+          "owner_hint": "Workflow team",
+          "last_modified_utc": "2026-05-20T17:15:26.218956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\00_WORKFLOWS"
+        },
+        {
+          "name": "4a-output",
+          "relative_path": "4a-output",
+          "kind": "dir",
+          "category": "exports",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\4a-output"
+        },
+        {
+          "name": "ARCHITECTURE.md",
+          "relative_path": "ARCHITECTURE.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\ARCHITECTURE.md"
+        },
+        {
+          "name": "Backside",
+          "relative_path": "Backside",
+          "kind": "dir",
+          "category": "other",
+          "owner_hint": "Backside",
+          "last_modified_utc": "2026-05-20T17:16:05.987184+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\Backside"
+        },
+        {
+          "name": "BACKSIDE_ARCHITECTURE.md",
+          "relative_path": "BACKSIDE_ARCHITECTURE.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\BACKSIDE_ARCHITECTURE.md"
+        },
+        {
+          "name": "BRAIN_README.md",
+          "relative_path": "BRAIN_README.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\BRAIN_README.md"
+        },
+        {
+          "name": "EXPORTS",
+          "relative_path": "EXPORTS",
+          "kind": "dir",
+          "category": "exports",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:16:05.987184+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\EXPORTS"
+        },
+        {
+          "name": "FOLDER_CONVENTIONS.md",
+          "relative_path": "FOLDER_CONVENTIONS.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\FOLDER_CONVENTIONS.md"
+        },
+        {
+          "name": "plan",
+          "relative_path": "plan",
+          "kind": "dir",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\plan"
+        },
+        {
+          "name": "README.md",
+          "relative_path": "README.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\README.md"
+        },
+        {
+          "name": "RUN_FAP_ARTICLE_PIPELINE.bat",
+          "relative_path": "RUN_FAP_ARTICLE_PIPELINE.bat",
+          "kind": "file",
+          "category": "workflows",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\RUN_FAP_ARTICLE_PIPELINE.bat"
+        },
+        {
+          "name": "RUN_PUBLIC_ARTICLE_REFINERY.bat",
+          "relative_path": "RUN_PUBLIC_ARTICLE_REFINERY.bat",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\RUN_PUBLIC_ARTICLE_REFINERY.bat"
+        },
+        {
+          "name": "THEOPHYSICS_PRIMER.md",
+          "relative_path": "THEOPHYSICS_PRIMER.md",
+          "kind": "file",
+          "category": "other",
+          "owner_hint": "Unknown",
+          "last_modified_utc": "2026-05-20T17:15:26.226956+00:00",
+          "source_of_truth_path": "D:\\\\GitHub\\\\theophysics-brain-map\\THEOPHYSICS_PRIMER.md"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "Missing config: 00_WORKFLOWS",
+    "Missing config: Backside",
+    "Missing README: plan",
+    "Missing config: plan",
+    "Missing README: EXPORTS",
+    "Missing config: EXPORTS",
+    "Missing README: 4a-output",
+    "Missing config: 4a-output",
+    "Missing README: 00_WORKFLOWS/01_SHARED_SCRIPTS",
+    "Missing config: 00_WORKFLOWS/01_SHARED_SCRIPTS",
+    "Missing README: 00_WORKFLOWS/prompts",
+    "Missing config: 00_WORKFLOWS/prompts",
+    "Missing config: 00_WORKFLOWS/00_WORKFLOW_LANES",
+    "Missing README: Backside/overview_generator",
+    "Missing config: Backside/overview_generator",
+    "Missing config: Backside/brain_dashboard",
+    "Missing README: EXPORTS/brain-overview",
+    "Missing config: EXPORTS/brain-overview",
+    "Missing config: 4a-output/FAP",
+    "Missing config: 4a-output/session-handoff-drop",
+    "Missing config: 4a-output/C4C-wiki",
+    "Missing config: 4a-output/digests",
+    "Missing config: 4a-output/embeddings",
+    "Missing README: 4a-output/axioms",
+    "Missing config: 4a-output/axioms",
+    "Missing config: 4a-output/theophysics-comms-hub",
+    "Missing config: 4a-output/proof-architecture",
+    "Missing README: 4a-output/knowledge-refinery",
+    "Missing config: 4a-output/knowledge-refinery",
+    "Missing README: 4a-output/paper-proof-grader",
+    "Missing config: 4a-output/paper-proof-grader",
+    "Missing config: 4a-output/link-pull-drop",
+    "Missing config: 4a-output/ollama",
+    "Missing config: 4a-output/C4C",
+    "Missing config: 4a-output/models",
+    "Missing config: 4a-output/proof-explorer",
+    "Missing config: 4a-output/github",
+    "Missing README: 4a-output/ai-portal-generator",
+    "Missing config: 4a-output/ai-portal-generator",
+    "Missing config: 4a-output/captures",
+    "Missing config: 4a-output/ratings"
+  ],
+  "connections": [
+    {
+      "from": "FOLDER_CONVENTIONS.md",
+      "to": "D:\\brain\\03_DEBERTA,"
+    },
+    {
+      "from": "FOLDER_CONVENTIONS.md",
+      "to": "X:\\.**"
+    },
+    {
+      "from": "FOLDER_CONVENTIONS.md",
+      "to": "X:\\ARCHITECTURE.md`"
+    },
+    {
+      "from": "FOLDER_CONVENTIONS.md",
+      "to": "X:\\Backside\\DEDUP_REPORT_20260516.md`"
+    },
+    {
+      "from": "FOLDER_CONVENTIONS.md",
+      "to": "X:\\CHECKS\\RUN_ALL.bat`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\BIL<br/>264"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\BIL\\`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\BIL\\engines\\pipeline\\*"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\C4C"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\C4C-wiki"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\FAP"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\_ARCHIVE\\"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\brain\\"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\brain\\03_DEBERTA<br/>MoritzLaurer/DeBERTa-v3-large"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "D:\\brain\\08_CLAIMS"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\BIL<br/>placeholder<br/>README"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\BIL\\`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\BIL`,"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\Backside\\DEDUP_REPORT_20260516.md"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\Backside\\DEDUP_REPORT_20260516.md`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\Backside\\PHASE1A_LOG_20260516.md`,"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\C4C-wiki<br/>862"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\C4C<br/>2497"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\DROP_HERE"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\DROP_HERE<br/>(master"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\DROP_HERE\\`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\FAP<br/>63"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\FAP`"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\FAP`,"
+    },
+    {
+      "from": "ARCHITECTURE.md",
+      "to": "X:\\_LOGS\\intake_engine_*.log"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "D:\\GitHub\\Math-Translation-Layer\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\Backside\\"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\Backside\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\Backside\\`."
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\CHECKS\\RUN_ALL.bat`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\\\Backside\\\\_models\\\\moon-streak\\\\dataset-200-theopoetic-examples.jsonl"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\ai-portal-generator\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\axioms\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\knowledge-refinery\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\link-pull-drop\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\models\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\paper-proof-grader\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\proof-architecture\\`,"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\proof-explorer\\`"
+    },
+    {
+      "from": "BACKSIDE_ARCHITECTURE.md",
+      "to": "X:\\session-handoff-drop\\`"
+    },
+    {
+      "from": "THEOPHYSICS_PRIMER.md",
+      "to": "D:\\01_Axioms\\_001-188\\`"
+    },
+    {
+      "from": "THEOPHYSICS_PRIMER.md",
+      "to": "D:\\PUB_AXIOM_FOUNDATIONS\\`"
+    },
+    {
+      "from": "THEOPHYSICS_PRIMER.md",
+      "to": "X:\\ARCHITECTURE.md`"
+    },
+    {
+      "from": "THEOPHYSICS_PRIMER.md",
+      "to": "X:\\FOLDER_CONVENTIONS.md`"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\Backside"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\Backside\\ROOT_CLEANUP_LOG_2026-05-13.md"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\David"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\RUN_FAP_ARTICLE_PIPELINE.bat"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\RUN_PUBLIC_ARTICLE_REFINERY.bat"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\ai-portal-generator"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\axioms"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\github"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\github\\pipeline-workflows\\workflows\\FolderAutomationPipeline"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\knowledge-refinery"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\knowledge-refinery\\05_WORKFLOW_RUNS\\workflow-packets"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\knowledge-refinery\\13_SOURCE_SYSTEMS\\FAP"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\link-pull-drop"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\models"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\paper-proof-grader"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\proof-explorer"
+    },
+    {
+      "from": "BRAIN_README.md",
+      "to": "X:\\session-handoff-drop"
+    },
+    {
+      "from": "README.md",
+      "to": "D:\\01_Axioms\\_001-188\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "README.md",
+      "to": "D:\\BIL\\*`"
+    },
+    {
+      "from": "README.md",
+      "to": "D:\\C4C-wiki`,"
+    },
+    {
+      "from": "README.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "README.md",
+      "to": "D:\\PUB_AXIOM_FOUNDATIONS\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\."
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\BIL`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\C4C-wiki\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\C4C\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\CHECKS\\RUN_ALL.bat`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\FAP\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\_LOGS\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\axioms\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\brain\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\captures\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\digests\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\embeddings\\`"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\knowledge-refinery\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\models\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\paper-proof-grader\\`,"
+    },
+    {
+      "from": "README.md",
+      "to": "X:\\ratings\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/THEOPHYSICS_WORKFLOW_MAP.md",
+      "to": "X:\\proof-architecture"
+    },
+    {
+      "from": "00_WORKFLOWS/AI_HUB_CLIPSYNC_AHK_WORKFLOW.md",
+      "to": "D:\\AI-HUB-BACKUP`,"
+    },
+    {
+      "from": "00_WORKFLOWS/AI_HUB_CLIPSYNC_AHK_WORKFLOW.md",
+      "to": "D:\\AI-HUB-SYNC`,"
+    },
+    {
+      "from": "00_WORKFLOWS/AI_HUB_CLIPSYNC_AHK_WORKFLOW.md",
+      "to": "D:\\GitHub\\physics-of-faith\\ai-hub`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\00_Canonical_PRODUCTION_v1.0`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\222genesis-to-quantum`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\AI-HUB-SYNC`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\BIL`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\ClipSync`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\Cowork`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\GTQ-BUILD`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\GitHub"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\GitHub`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\HTML_MASTER`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\NVIDIA"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\R2_BACKUP_theophysics`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\VAULT_USED_SOURCES`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\article-builder`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\brain`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\forge`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\lib`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\nlm_downloads`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\notebooklm-auth`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\ok`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\opuskit`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\temp`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "D:\\theophysics_lean_production_audit_run`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_DRIVE_PROGRAMS_AND_WORK_AREAS_MAP.md",
+      "to": "X:\\brain`,"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\222genesis-to-quantum"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GTQ-BUILD"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Cloudflare-PWA-CLIPBOARD-CODEX"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Cloudflare-scraping"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\DashboardPlusPlus"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\David-COdex"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\David-Obsidian"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\David-s-research-database-OBS-Plugin-Final-Claude"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Edge-TTS-GUI"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\FIS_v1"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Fabric"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Family-Html"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Forge-Cloud`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Forge-v1-Codex`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Forge-v2-Monorepo"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Forge-v2-Monorepo`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\LOWES-BACKEND-CLAUDE"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Local-File-Organizer`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\LocalAI"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Math-Translation-Layer`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\MathTranslator"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Physics_of_faith`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\PowerShell"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\PowerShell.MCP"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Python-Backend-Dashboards"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Streamlit-Web"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\TTS-PWA`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Theophysics"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Treaties"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\Word-ontology"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\ahk-dashboard"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\ai-hub-v2"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\behavioral-intelligence-layer`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\claudian"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\clipsync-bridge"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\crawl4ai"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\deduplicator"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\deepcrawl"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\edge-tts"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\family-briefing"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\file-intelligence-system`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\gemini-cli"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\generative_agents"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\genesis-to-quantum`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\hexo-theme-obsidian"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\link-research-engine"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\llama-stack"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\local-deep-researcher"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\mcp-wolframalpha"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\nerve"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\nerve-tts-pwa`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\networkx"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\notebooklm-to-html"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\obsidian-quartz"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\obsidian-quick-sync"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\ollama-playground"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\open-notebook-1.5.0"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\open_deep_research"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\openclaw"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\openclaw-cloudflare-deploy"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\oracle"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\physics-of-faith-visualizations"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\physics-of-faith`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\pof2828-dashboard`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\sympy"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\syno-videoinfo-plugin"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\text-dedup-main"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-coherence-validator"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-comms-admin-api`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-comms`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-formal-papers`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-link-harvester"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-vault-cleaner"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\theophysics-web`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\v2"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\websites"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\whisper-gui"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\youtube-scraper"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub\\youtube-transcript-ytdlp"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\GitHub`"
+    },
+    {
+      "from": "00_WORKFLOWS/D_GITHUB_REPOSITORY_MAP.md",
+      "to": "D:\\forge\\Forge-v2-Monorepo"
+    },
+    {
+      "from": "00_WORKFLOWS/WORKFLOWS_ROOT_MIGRATION_STATUS.md",
+      "to": "X:\\brain\\00_WORKFLOWS`"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "D:\\C4C"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "D:\\C4C-wiki`"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "D:\\C4C`"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "X:\\brain\\C4C-wiki`"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "X:\\brain\\C4C`"
+    },
+    {
+      "from": "Backside/C4C_FAP_MIGRATION_NOTE_2026-05-13.md",
+      "to": "X:\\brain\\FAP`"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "D:\\C4C"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "D:\\C4C-wiki"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "D:\\FAP"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "D:\\_ARCHIVE"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "D:\\_ARCHIVE\\C4C-wiki"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "X:\\BIL"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "X:\\BIL\\README.md"
+    },
+    {
+      "from": "Backside/PHASE1B_LOG_20260516.md",
+      "to": "X:\\FAP"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\Backside\\"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\Backside\\_ARCHIVE_brain_dupes_20260516\\_LOGS"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\Backside\\_ARCHIVE_brain_dupes_20260516\\ai-portal-generator"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\Backside\\_ARCHIVE_brain_dupes_20260516\\link-pull-drop"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\Backside\\_ARCHIVE_brain_dupes_20260516\\paper-proof-grader"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\Backside\\_ARCHIVE_brain_dupes_20260516\\theophysics-comms-hub"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\C4C"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\C4C-wiki"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\FAP"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\C4C"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\C4C-wiki"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\FAP"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\_LOGS"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\ai-portal-generator"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\link-pull-drop"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\ollama\\BATCH_REPROCESS_ALL.bat"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\ollama\\RUN_OLLAMA_HANDOFF.bat"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\ollama\\ollama_session_handoff.py"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\paper-proof-grader"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\brain\\theophysics-comms-hub"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\ollama"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\ollama\\BATCH_REPROCESS_ALL.bat"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\ollama\\RUN_OLLAMA_HANDOFF.bat"
+    },
+    {
+      "from": "Backside/PHASE1A_LOG_20260516.md",
+      "to": "X:\\ollama\\ollama_session_handoff.py"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\ONLINE_CODEX_PACKAGE\\README.md"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\01-RESONANT-COUPLING-HYPOTHESIS-RCH.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\02-REGISTERED-REPORT-MVE-QRNG.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\03-THE-FOURFOLD-NATURE-OF-TRUTH.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\04-TURTLES-TERMINAL-NODE-HYPOTHESES.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_01A_Collapse_Threshold.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_01_Why_Time_Is_Grace.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_02_The_First_Quantum_State.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_03A_MacArthur_And_The_Equation.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_03B_The_Three_Pathways.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_03C_Why_God_Drowned_Everybody.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_03_Free_Will_In_Two_Frames.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_04A_The_Decoherence_Curve.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_04B_How_Lies_Kill.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_04_The_Day_Time_Began.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_05A_Trinity_Mechanism.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_05B_Trinity_Timeline.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_05C_Why_Physics_Is_Broken_In_Two.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_05_The_Substrate_Fractured.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_06_The_Photon_Isnt_Watching.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_07A_Empirical_Testing_Master_Equation.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_08A_The_Temporal_Trap.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_08B_How_God_Restores.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_08C_Science_Behind_Restoration.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_08_God_Doesnt_Need_A_Clock.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_09A_Regime_Dependent_Theology.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_09B_Isomorphism_Civilizational_Decay.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_09_Same_God_Both_Testaments.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_10A_Why_The_Pattern_Is_The_Signal.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\GTQ_10_The_Counter_Move.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\gtq-03-first-quantum-state.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\mda-complete-series-clean.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\mda-complete-series.paper-grade.json:3"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:103"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:114"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:125"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:136"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:147"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:15"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:158"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:169"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:180"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:191"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:202"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:213"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:224"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:235"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:246"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:257"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:26"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:268"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:37"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:48"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:59"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:70"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:81"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260512_233141.json:92"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260513_081944.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260513_104815.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260513_110727.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260514_000457.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260514_002854.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260514_044630.json:15"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260514_044630.json:26"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260514_044630.json:37"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\OUTPUT\\paper-proof-grader-run-20260514_044630.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\README.md"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\RUN_FRUITS_OF_SPIRIT.bat"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\SETUP_STATUS_2026-05-14.md"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\config.json:4"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\config.json:5"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\config.json:6"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\config.json:8"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\paper-proof-grader\\fruits_of_spirit_bridge.py"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\session-handoff-drop\\BATCH_REPROCESS_ALL.bat"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\session-handoff-drop\\RUN.bat"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\session-handoff-drop\\TROUBLESHOOT_AND_REPAIR.bat"
+    },
+    {
+      "from": "Backside/PHASE1_PATH_FIX_LOG_20260516.md",
+      "to": "X:\\session-handoff-drop\\ollama_healthcheck.py"
+    },
+    {
+      "from": "Backside/ROOT_CLEANUP_LOG_2026-05-13.md",
+      "to": "X:\\Backside`"
+    },
+    {
+      "from": "Backside/ROOT_CLEANUP_LOG_2026-05-13.md",
+      "to": "X:\\David\\maps-and-notes`"
+    },
+    {
+      "from": "Backside/ROOT_CLEANUP_LOG_2026-05-13.md",
+      "to": "X:\\David`"
+    },
+    {
+      "from": "Backside/ROOT_CLEANUP_LOG_2026-05-13.md",
+      "to": "X:\\`"
+    },
+    {
+      "from": "Backside/README.md",
+      "to": "X:\\`"
+    },
+    {
+      "from": "Backside/README.md",
+      "to": "X:\\knowledge-refinery`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL's"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL\\*`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL\\PREFERENCE_ENGINE_REPO_SPEC.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL\\browser`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\BIL`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\C4C-wiki,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\C4C-wiki`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\C4C-wiki`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\C4C`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\C4C`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\FAP"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\FAP,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\FAP\\..."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\FAP`."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\_ARCHIVE\\"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\_ARCHIVE\\FAP"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\_ARCHIVE\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "D:\\_ARCHIVE\\`."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\#recycle\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\00_WORKFLOWS\\*\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\00_WORKFLOWS\\<name>\\`."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\00_WORKFLOWS\\THEOPHYSICS_WORKFLOW_MAP.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\00_WORKFLOWS\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\00_WORKFLOWS\\paper-proof-grader\\00_DROP\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\00_WORKFLOWS\\prompts\\x-drive-reorg\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ARCHITECTURE.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL**."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL\\*`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL\\README.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\BIL`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\Backside\\DEDUP_REPORT_<date>.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\Backside\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\Backside\\bil_mirror.ps1`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\Backside\\dedup_audit.ps1`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\Backside\\intake_engine.py`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\Backside\\intake_engine.py`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C-wiki"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C-wiki."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C-wiki\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\C4C\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\DROP_HERE\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\DROP_HERE\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\DROP_HERE\\`:"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\David\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\FAP"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\FAP."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\FAP\\...`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\FAP\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\FAP`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\FAP`."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\README.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\RUN_FAP_ARTICLE_PIPELINE.bat`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\RUN_PUBLIC_ARTICLE_REFINERY.bat`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\_LOGS/`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\_LOGS\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\_LOGS\\intake_engine_YYYY-MM-DD.log`."
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ai-portal-generator/`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ai-portal-generator\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\axioms\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\C4C"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\C4C-wiki"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\C4C-wiki\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\C4C\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\C4C_FAP_MIGRATION_NOTE_2026-05-13.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\FAP"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\FAP\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\_LOGS\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\ai-portal-generator\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\link-pull-drop\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\ollama\\*`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\paper-proof-grader\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain\\theophysics-comms-hub\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\brain`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\captures\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\captures\\links\\DROP_HERE/`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\digests\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\embeddings\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\github\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\knowledge-refinery\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\link-pull-drop/`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\link-pull-drop\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\link-pull-drop\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\models\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ollama\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ollama\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ollama\\ollama_session_handoff.py`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\paper-proof-grader/`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\paper-proof-grader\\...`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\paper-proof-grader\\README.md`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\paper-proof-grader\\RUN.bat`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\paper-proof-grader\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\paper-proof-grader\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\proof-architecture\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\proof-explorer\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\ratings\\`"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\session-handoff-drop\\`,"
+    },
+    {
+      "from": "plan/yes-i-want-togo-agile-puddle.md",
+      "to": "X:\\theophysics-comms-hub/`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\ai-portal-generator\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\axioms\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\knowledge-refinery\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\link-pull-drop\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\models\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\paper-proof-grader\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\proof-architecture\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\proof-explorer\\`"
+    },
+    {
+      "from": "4a-output/_BACKSIDE_STRUCTURE_PROBE.md",
+      "to": "X:\\session-handoff-drop\\`"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\<nlp>\\config.json`,"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\axioms\\00_DROP`"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\axioms\\00_INBOX_DROP_PAPERS_HERE"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\knowledge-refinery\\00_DROP`"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\knowledge-refinery\\00_INTAKE"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\paper-proof-grader\\00_DROP`"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\paper-proof-grader\\DROP_PAPERS_HERE"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\paper-proof-grader\\INPUT"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\session-handoff-drop\\00_DROP`"
+    },
+    {
+      "from": "4a-output/_4a_LOG.md",
+      "to": "X:\\session-handoff-drop\\DROP_HERE"
+    },
+    {
+      "from": "4a-output/session-handoff-drop/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/session-handoff-drop/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/session-handoff-drop/_AGENT_BRIEF.md",
+      "to": "X:\\session-handoff-drop\\README.md"
+    },
+    {
+      "from": "4a-output/axioms/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/axioms/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/axioms/_AGENT_BRIEF.md",
+      "to": "X:\\axioms\\README.md"
+    },
+    {
+      "from": "4a-output/knowledge-refinery/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/knowledge-refinery/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/knowledge-refinery/_AGENT_BRIEF.md",
+      "to": "X:\\knowledge-refinery\\README.md"
+    },
+    {
+      "from": "4a-output/paper-proof-grader/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/paper-proof-grader/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/paper-proof-grader/_AGENT_BRIEF.md",
+      "to": "X:\\paper-proof-grader\\README.md"
+    },
+    {
+      "from": "4a-output/link-pull-drop/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/link-pull-drop/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/link-pull-drop/_AGENT_BRIEF.md",
+      "to": "X:\\link-pull-drop\\README.md"
+    },
+    {
+      "from": "4a-output/ollama/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/ollama/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/ollama/_AGENT_BRIEF.md",
+      "to": "X:\\ollama\\README.md"
+    },
+    {
+      "from": "4a-output/ai-portal-generator/_AGENT_BRIEF.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "4a-output/ai-portal-generator/_AGENT_BRIEF.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "4a-output/ai-portal-generator/_AGENT_BRIEF.md",
+      "to": "X:\\ai-portal-generator\\README.md"
+    },
+    {
+      "from": "Backside/overview_generator/BRAIN_SNAPSHOT_OVERVIEW.md",
+      "to": "D:\\GitHub\\theophysics-brain-map`"
+    },
+    {
+      "from": "Backside/overview_generator/BRAIN_SNAPSHOT_OVERVIEW.md",
+      "to": "X:\\Backside`"
+    },
+    {
+      "from": "Backside/overview_generator/BRAIN_SNAPSHOT_OVERVIEW.md",
+      "to": "X:\\Conversions`"
+    },
+    {
+      "from": "Backside/overview_generator/BRAIN_SNAPSHOT_OVERVIEW.md",
+      "to": "X:\\David`"
+    },
+    {
+      "from": "Backside/overview_generator/BRAIN_SNAPSHOT_OVERVIEW.md",
+      "to": "X:\\EXPORTS`"
+    },
+    {
+      "from": "Backside/overview_generator/BRAIN_SNAPSHOT_OVERVIEW.md",
+      "to": "X:\\GUI`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\axioms\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\axioms\\RUN_AXIOMS_WORKFLOW.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\knowledge-refinery\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\knowledge-refinery\\RUN_CONDUCTOR.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\link-pull-drop\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\link-pull-drop\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\paper-proof-grader\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\paper-proof-grader\\00_DROP\\test_paper.txt"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\paper-proof-grader\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\session-handoff-drop\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\00_WORKFLOWS\\session-handoff-drop\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine\\config\\x_drive.yaml"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine\\config\\x_drive.yaml`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine\\state.json"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\Backside\\intake_engine`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\DROP_HERE"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\DROP_HERE\\test_paper.txt"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\\\DROP_HERE"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\_LOGS"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4d_intake_engine_program.md",
+      "to": "X:\\_LOGS\\prompt_4d_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\$_\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\$_\\health_check.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\$nlp\\$f"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\$nlp\\prompts"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\<nlp>\\00_DROP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\<nlp>\\<old_name>"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\ARCHITECTURE.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\FOLDER_CONVENTIONS.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\_LOGS\\prompt_4a_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\axioms\\00_INBOX_DROP_PAPERS_HERE'},"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\captures\\links\\DROP_HERE/`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\knowledge-refinery\\00_INTAKE'},"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\link-pull-drop\\00_DROP/`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\paper-proof-grader\\DROP_PAPERS_HERE'},"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4a_folder_convention_rollout.md",
+      "to": "X:\\session-handoff-drop\\DROP_HERE'}"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\BACKSIDE_ARCHITECTURE.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\_LOGS\\prompt_4e_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\axioms\\`,"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\knowledge-refinery\\`,"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_workflow_composer.md",
+      "to": "X:\\paper-proof-grader\\`,"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\$_"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\$_\\README.md"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\$_"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\<nlp>"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\<nlp>`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\README.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\knowledge-refinery\\RUN_CONDUCTOR.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\link-pull-drop\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\paper-proof-grader\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\00_WORKFLOWS\\session-handoff-drop\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\<nlp>"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\<nlp>\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\C4C"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\C4C'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\C4C-wiki"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\C4C"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\C4C'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\C4C-wiki"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\README.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Knowledge\\`,"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\README.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\captures"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\digests"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\digests'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\embeddings"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\models"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\Pipeline\\ratings"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\README.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\_LOGS\\prompt_4b_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\_brain_DEPRECATED_20260516\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\brain\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\captures"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\digests"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\digests'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\embeddings"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\models"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\paper-proof-grader\\RUN.bat`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4b_root_simplification.md",
+      "to": "X:\\ratings"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "D:\\brain\\01_WHISPER"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "D:\\brain\\01_WHISPER\\_MODELS"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "D:\\brain\\01_WHISPER\\_MODELS\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "D:\\brain\\01_WHISPER\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "D:\\brain\\05_YOUTUBE\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "D:\\brain\\06_IMAGES\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\conversion-layer\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\conversion-layer\\00_DROP\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\conversion-layer\\00_DROP\\<file>`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\conversion-layer\\OUTPUT\\Modern-Day*.md"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\conversion-layer\\RUN.bat"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\conversion-layer\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\00_WORKFLOWS\\link-pull-drop\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Backside\\conversion_lib"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Backside\\conversion_lib[whisper,ocr"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Backside\\conversion_lib\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Backside\\conversion_lib\\config\\x_drive.yaml`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\C4C\\ap_pdfs\\AP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\C4C\\ap_pdfs\\Modern-Day"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Pipeline\\captures\\tts_out"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Pipeline\\captures\\tts_out\\`**"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\Pipeline\\captures\\youtube_cache"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4f_conversion_layer.md",
+      "to": "X:\\_LOGS\\prompt_4f_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\00_WORKFLOWS\\<nlp>\\health_check.bat`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\<nlp>\\health_check.bat`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\ARCHITECTURE.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\README.md'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\RUN_ALL.bat'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\health_report.md'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\history'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\CHECKS\\run_all.ps1'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\FOLDER_CONVENTIONS.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4g_root_checks_master.md",
+      "to": "X:\\_LOGS\\prompt_4g_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\Backside\\brain_dashboard"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\Backside\\brain_dashboard\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\Backside\\brain_dashboard`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\DROP_HERE`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\_LOGS\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\_LOGS\\*.log"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\_LOGS\\intake_engine_*.log"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4e_pyside_dashboard.SUPERSEDED_2026-05-16.md",
+      "to": "X:\\_LOGS\\prompt_4e_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\*"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\*`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\.gitignore`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_*.xml"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_BACKUP_<name>.xml`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_NEW_<name>.xml`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\data\\fap_health\\FAP_HEALTH.latest.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\data\\fap_health\\FAP_HEALTH_*.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\data\\fap_health\\FAP_HEALTH_20260511_*.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\data\\fap_health\\_HISTORICAL_PRE-X-MIGRATION\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_boot.py',"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_boot.py`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_dashboard.html'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_dashboard.html`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_healthcheck.py',"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_healthcheck.py`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_postgres_sync.py"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_postgres_sync.py',"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\fap_postgres_sync.py`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\llm_hub.py',"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\llm_hub.py`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\stations\\media_router.py',"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL\\engines\\pipeline\\stations\\media_router.py`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\BIL`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\FAP\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\\\BIL\\\\','D:\\\\FAP[\\\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\\\BIL\\\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\\\BIL`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\\\FAP|D:\\\\BIL'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\brain\\03_DEBERTA`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "D:\\brain\\08_CLAIMS`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\BIL\\*`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\BIL\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\FAP`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\\\BIL\\\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\_LOGS\\prompt_4c_inventory_2026-05-16.md`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/4c_batch_script_sweep.md",
+      "to": "X:\\_LOGS\\prompt_4c_log_2026-05-16.md`:"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL/D:\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_*.xml"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_BACKUP_*.xml`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_NEW_*.xml"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\BIL\\_TASK_SCHEDULER_NEW_*.xml`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\FAP."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\FAP\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\FAP\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\FAP\\`."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\\\FAP|D:\\\\BIL'"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_ARCHIVE"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_ARCHIVE\\BIL_pre_X_migration"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_ARCHIVE\\BIL_pre_X_migration\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_ARCHIVE\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_ARCHIVE\\FAP**"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_ARCHIVE\\FAP\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "D:\\_BIL_MOVED_TO_X_20260516\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\*"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\README.md"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\bil-dashboard.html`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\bil_service.py`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\data\\fap_sync\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\data\\fap_sync\\*.json"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\BIL\\engines\\pipeline\\fap_postgres_sync.py"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\Backside\\X_BIL_PLACEHOLDER_README_PRE_MIGRATION.md"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\Backside\\X_BIL_PLACEHOLDER_README_PRE_MIGRATION.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\Backside\\task_scheduler_migration"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\Backside\\task_scheduler_migration\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\Backside\\task_scheduler_migration\\_TASK_SCHEDULER_NEW_*.xml"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\FAP"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\FAP."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\FAP\\"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\FAP\\..."
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\FAP\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\_LOGS\\prompt_5_log_2026-05-16.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\_LOGS\\prompt_5_robocopy_bil.log"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/5_bil_fap_migration.md",
+      "to": "X:\\_LOGS\\prompt_5_robocopy_fap.log"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "D:\\BIL"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "D:\\BIL\\*`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\00_WORKFLOWS\\`,"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\ARCHITECTURE.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\BIL`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\CHECKS\\RUN_ALL.bat`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\FOLDER_CONVENTIONS.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/00_INDEX.md",
+      "to": "X:\\_LOGS\\<prompt_id>_log_YYYY-MM-DD.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "D:\\BIL`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "D:\\FAP`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "D:\\`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "D:\\brain\\03_DEBERTA"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "X:\\CHECKS\\RUN_ALL.bat`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`"
+    },
+    {
+      "from": "00_WORKFLOWS/prompts/x-drive-reorg/_AGENT_BRIEF_TEMPLATE.md",
+      "to": "X:\\THEOPHYSICS_PRIMER.md`."
+    }
+  ],
+  "postgres": {
+    "status": "unavailable",
+    "host": "192.168.1.177",
+    "port": 2665,
+    "reason": "[Errno 101] Network is unreachable"
+  }
+}
