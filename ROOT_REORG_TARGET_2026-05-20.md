@@ -2,8 +2,14 @@
 
 **What this is:** The new target contract for cleaning `X:\` before more build work lands there.
 **Owner:** David Lowe + Codex
-**Status:** target contract, not yet fully applied to live `X:\`
+**Status:** applied to live `X:\` on 2026-05-20
 **Source of truth:** `X:\` is `\\dlowenas\brain`
+
+Execution evidence:
+
+- Live migration log: `X:\Backside\_archive\root\ROOT_REORG_LOG_2026-05-20.md`
+- Repo copy: `Backside/_archive/root/ROOT_REORG_LOG_2026-05-20.md`
+- Vectorization queue: `Backside/_state/vectorization_queue/root-corpus-moves-20260520.csv`
 
 ## Decision
 
@@ -132,3 +138,18 @@ These should move under `X:\Backside\_models\downloaded\`.
 ## /PROBE
 
 The weak point is hard-coded path drift. If a workflow assumes `X:\knowledge-refinery` or `X:\paper-proof-grader`, moving the folder without a pointer breaks the run. The fix is not to leave the root dirty forever; the fix is to move with an explicit compatibility layer and then delete the compatibility layer only after all references are updated.
+
+## Vectorization Queue
+
+The root cleanup exposed four corpus lanes that should be indexed as corpus, not treated as runtime machinery:
+
+| Target path | Files | Candidate text files | Candidate text bytes | Index status |
+|---|---:|---:|---:|---|
+| `X:\Backside\corpus\C4C` | 2,497 | 1,198 | 196,611,541 | needs vector index |
+| `X:\Backside\corpus\C4C-wiki` | 862 | 839 | 39,198,724 | needs vector index |
+| `X:\Backside\corpus\FAP` | 63 | 24 | 60,894 | needs vector index |
+| `X:\Backside\corpus\BIL` | 1 | 1 | 858 | needs vector index |
+
+Also index `X:\Backside\_state\digests` as small operational summaries: 14 candidate text files, 48,529 bytes.
+
+Do not vectorize model weights under `X:\Backside\_models`. Workflows should be indexed only as workflow/station metadata unless a workflow explicitly emits corpus content.
