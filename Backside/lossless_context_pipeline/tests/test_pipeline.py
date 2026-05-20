@@ -1,6 +1,7 @@
 ﻿from pathlib import Path
 
 from Backside.lossless_context_pipeline.pipeline import build_artifact
+from Backside.lossless_context_pipeline.address import score_vector, vector_string
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,3 +41,10 @@ def test_stable_ids_for_same_content():
     assert first.ids.doc_id == second.ids.doc_id
     assert first.ids.content_hash == second.ids.content_hash
     assert [b.block_id for b in first.blocks] == [b.block_id for b in second.blocks]
+
+
+def test_protocol_like_artifact_scores_authority_trust_and_coherence():
+    text = "Protocol rule: reconstruct a self-contained artifact. Required fields must preserve audit confidence and risk."
+    vector = score_vector(["CLAIM", "EQUATION", "DOMAIN_SHIFT"], domain_count=2, entity_count=4, text=text)
+
+    assert vector_string(vector) == "G3M3E0S0T3K3R3Q0F3C3"

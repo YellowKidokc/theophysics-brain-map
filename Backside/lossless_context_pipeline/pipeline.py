@@ -290,7 +290,7 @@ def build_artifact(path: Path, *, vault_id: str, note_version: str = "1", embedd
     mechanism_graph = _mechanism_graph(blocks)
     risky = sorted({word for block in blocks for word in block.overstatement_words})
     dashboard, ledger = _grades(claim_arch, evidence_chain, eq_sem, domain_boundary, risky)
-    vector = score_vector([block.block_type for block in blocks], len(domain_boundary), len(entities))
+    vector = score_vector([block.block_type for block in blocks], len(domain_boundary), len(entities), all_text)
 
     domain = _frontmatter_value(frontmatter, "domain", "THEOPHYSICS")
     named_entity = slugify(str(frontmatter.get("title") or path.stem)).upper()

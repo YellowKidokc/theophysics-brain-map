@@ -6,14 +6,18 @@ from .ids import short_hash, slugify
 TIE_BREAK = ["E", "C", "G", "K", "M", "T", "R", "F", "S", "Q"]
 
 
-def score_vector(block_types: list[str], domain_count: int, entity_count: int) -> dict[str, int]:
+def score_vector(block_types: list[str], domain_count: int, entity_count: int, text: str = "") -> dict[str, int]:
     has_claims = "CLAIM" in block_types
     has_equations = "EQUATION" in block_types
     has_evidence = "EVIDENCE" in block_types
     has_kill = "KILL_CONDITION" in block_types
     has_domain = "DOMAIN_SHIFT" in block_types
+    low = text.lower()
+    has_authority_language = any(word in low for word in ["must", "required", "protocol", "rule", "assign", "return", "do not", "only"])
+    has_trust_language = any(word in low for word in ["trust", "confidence", "reconstruct", "reconstruction", "risk", "uncertainty", "audit", "verify"])
+    has_unification_language = any(word in low for word in ["coherence", "unity", "synthesis", "integration", "unification", "single artifact", "self-contained"])
     return {
-        "G": 3 if has_evidence or has_kill else 0,
+        "G": 3 if has_evidence or has_kill or has_authority_language else 0,
         "M": 3 if has_kill or has_equations else 0,
         "E": 3 if has_domain and has_kill else 0,
         "S": 0,
@@ -21,8 +25,8 @@ def score_vector(block_types: list[str], domain_count: int, entity_count: int) -
         "K": 3 if has_claims or has_equations or has_evidence else 0,
         "R": 3 if domain_count > 1 or entity_count > 3 else 0,
         "Q": 0,
-        "F": 3 if has_kill else 0,
-        "C": 3 if has_domain and has_claims else 0,
+        "F": 3 if has_kill or has_trust_language else 0,
+        "C": 3 if (has_domain and has_claims) or has_unification_language else 0,
     }
 
 
