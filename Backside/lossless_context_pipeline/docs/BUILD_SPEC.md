@@ -119,6 +119,15 @@ python -m Backside.lossless_context_pipeline.cli batch `
   --embeddings none
 ```
 
+3D semantic projection over generated artifacts:
+
+```powershell
+python -m Backside.lossless_context_pipeline.cli space `
+  --input-root X:\EXPORTS\lossless-context\calibration-corpus `
+  --out X:\EXPORTS\lossless-context\calibration-corpus\semantic-space `
+  --mode sbert
+```
+
 With SBERT block embeddings:
 
 ```powershell

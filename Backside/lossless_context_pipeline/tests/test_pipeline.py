@@ -2,6 +2,7 @@
 
 from Backside.lossless_context_pipeline.pipeline import build_artifact
 from Backside.lossless_context_pipeline.address import score_vector, vector_string
+from Backside.lossless_context_pipeline.vector_space import artifact_text
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,6 +58,13 @@ def test_entropy_topic_does_not_force_artifact_entropy():
     assert vector["E"] == 0
 
 
+def test_checklist_scores_structured_knowledge_without_equations():
+    text = "Final checklist: confirm aircraft identity, verify fuel level, inspect engine status, review emergency procedures."
+    vector = score_vector(["KILL_CONDITION", "OTHER"], domain_count=1, entity_count=2, text=text)
+
+    assert vector["K"] == 3
+
+
 def test_audience_frontmatter_aliases_to_access(tmp_path):
     md = tmp_path / "pilot.md"
     md.write_text(
@@ -77,3 +85,11 @@ The checklist must be completed in order.
     artifact = build_artifact(md, vault_id="test-vault", embeddings="none")
 
     assert "/TEAM/" in artifact.address
+
+
+def test_artifact_text_contains_claims_for_projection():
+    artifact = build_artifact(SAMPLE, vault_id="test-vault", embeddings="none")
+    text = artifact_text(artifact.model_dump(mode="json"))
+
+    assert artifact.address in text
+    assert "grace" in text.lower()

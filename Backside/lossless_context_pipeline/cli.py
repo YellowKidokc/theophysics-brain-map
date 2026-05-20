@@ -5,6 +5,7 @@ from pathlib import Path
 
 from .pipeline import build_artifact
 from .storage import store_postgres, write_outputs
+from .vector_space import project_artifacts
 
 
 def run_one(args: argparse.Namespace) -> int:
@@ -38,6 +39,13 @@ def run_batch(args: argparse.Namespace) -> int:
     return 0
 
 
+def run_space(args: argparse.Namespace) -> int:
+    csv_path, json_path = project_artifacts(Path(args.input_root), Path(args.out), mode=args.mode)
+    print(f"CSV: {csv_path}")
+    print(f"JSON: {json_path}")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Lossless Context Compression + Semantic Addressing pipeline")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -61,6 +69,12 @@ def main() -> int:
     batch.add_argument("--embeddings", choices=["none", "sbert"], default="none")
     batch.add_argument("--postgres-dsn")
     batch.set_defaults(func=run_batch)
+
+    space = sub.add_parser("space")
+    space.add_argument("--input-root", required=True)
+    space.add_argument("--out", required=True)
+    space.add_argument("--mode", choices=["sbert", "semantic"], default="sbert")
+    space.set_defaults(func=run_space)
 
     args = parser.parse_args()
     return args.func(args)
