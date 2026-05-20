@@ -13,6 +13,7 @@ The map of the Theophysics brain — David Lowe's `X:\` working drive. Maps, con
 
 | Path | What it is |
 |---|---|
+| [`GRAPH_LAYER_DECISION_2026-05-20.md`](GRAPH_LAYER_DECISION_2026-05-20.md) | Decision note for an Open-Brain-Map-style semantic graph over folders, workflows, stations, Postgres, exports, prompts, and vector systems |
 | [`ROOT_REORG_TARGET_2026-05-20.md`](ROOT_REORG_TARGET_2026-05-20.md) | The new root cleanup contract: `David`, `GUI`, `Conversions`, `EXPORTS`, and `Backside` |
 | [`ARCHITECTURE.md`](ARCHITECTURE.md) | The X:\ brain system map — 11 Mermaid diagrams of zones, workflows, intake/output flow |
 | [`FOLDER_CONVENTIONS.md`](FOLDER_CONVENTIONS.md) | The 3-layer folder contract every folder on X:\ honors (L1 universal · L2 workflow · L3 NLP-specific) |
