@@ -48,3 +48,25 @@ def test_protocol_like_artifact_scores_authority_trust_and_coherence():
     vector = score_vector(["CLAIM", "EQUATION", "DOMAIN_SHIFT"], domain_count=2, entity_count=4, text=text)
 
     assert vector_string(vector) == "G3M3E0S0T3K3R3Q0F3C3"
+
+
+def test_audience_frontmatter_aliases_to_access(tmp_path):
+    md = tmp_path / "pilot.md"
+    md.write_text(
+        """---
+title: Pilot
+domain: AVIATION
+state: F
+audience: TEAM
+risk: R4
+---
+
+# Pilot
+
+The checklist must be completed in order.
+""",
+        encoding="utf-8",
+    )
+    artifact = build_artifact(md, vault_id="test-vault", embeddings="none")
+
+    assert "/TEAM/" in artifact.address

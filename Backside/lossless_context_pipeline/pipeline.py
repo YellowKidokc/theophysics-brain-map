@@ -42,6 +42,9 @@ RELATION_WORDS = {
 
 
 def _frontmatter_value(frontmatter: dict[str, Any], key: str, default: str) -> str:
+    if key == "access" and "access" not in frontmatter and "audience" in frontmatter:
+        value = frontmatter.get("audience", default)
+        return str(value).upper()
     value = frontmatter.get(key, default)
     return str(value).upper() if key in {"domain", "access", "use", "risk"} else str(value)
 

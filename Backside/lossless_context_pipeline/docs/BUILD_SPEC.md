@@ -59,6 +59,25 @@ Schemas live in `schemas.py`:
 - `GapItem`
 - `LosslessArtifact`
 
+## Design Notes
+
+Calibration rules and edge failures live in:
+
+```text
+Backside/lossless_context_pipeline/docs/DESIGN_NOTES_2026-05-20.md
+```
+
+Key implementation constraints:
+
+- score artifact function, not topic
+- binary `0/3` determines address
+- confidence must not alter canonical address
+- use Hamming distance for inter-model agreement
+- `C` is explicit synthesis/integration, not quality
+- `E` is artifact disorder, not dark subject matter
+- grade is audit metadata, never filename identity
+- `R_sem` means Relation/Bond; `R_file` means Risk
+
 ## Postgres Tables
 
 DDL lives in `docs/postgres_schema.sql`.
