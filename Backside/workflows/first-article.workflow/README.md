@@ -9,7 +9,7 @@ source
 -> conversion / canonical Markdown
 -> executive summary + overview + math layer
 -> image notes / quote context
--> lossless context JSON + HTML
+-> lossless context JSON + HTML + semantic tags
 -> manifest
 ```
 
@@ -78,7 +78,9 @@ X:\Backside\_state\first-article-workflow\<run_id>\
 | overview | wrapped from station lab | `stations/<run>/overview.md` |
 | math-layer | wrapped from station lab | `stations/<run>/math-layer.md` |
 | image-notes | first deterministic pass | `image-notes.md` |
-| lossless-context | wired | `lossless/*.json`, `lossless/*.html` |
+| lossless-context | wired | `lossless/*.json`, `lossless/*.html`, `lossless/*.semantic-tags.md`, `lossless/*.semantic-tags.json` |
+
+Each lossless packet now carries a deterministic `master_equation_uuid`, the Nabla address/vector/hash, and an Obsidian-style semantic tag block. Tag rows point back to stable block IDs so the HTML snapshot, Markdown comments, and Postgres records can all reference the same claim, evidence bundle, equation, kill condition, or relationship.
 
 ## Boundary
 

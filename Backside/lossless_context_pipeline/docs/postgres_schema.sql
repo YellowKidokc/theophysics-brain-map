@@ -27,9 +27,13 @@ create table if not exists lcc_audit_snapshots (
   address text not null,
   vector jsonb not null,
   semantic_hash text not null,
+  master_equation_uuid uuid,
   artifact jsonb not null,
   created_at timestamptz not null default now()
 );
+
+alter table lcc_audit_snapshots
+  add column if not exists master_equation_uuid uuid;
 
 create table if not exists lcc_blocks (
   block_id uuid primary key,
@@ -86,7 +90,22 @@ create table if not exists lcc_repair_items (
   payload jsonb not null
 );
 
+create table if not exists lcc_semantic_tags (
+  tag_id uuid primary key,
+  audit_snapshot_id uuid not null references lcc_audit_snapshots(audit_snapshot_id) on delete cascade,
+  doc_id uuid not null,
+  block_id uuid,
+  tag_type text not null,
+  label text not null,
+  chi_vars text[] not null default '{}',
+  master_equation_uuid uuid not null,
+  payload jsonb not null,
+  created_at timestamptz not null default now()
+);
+
 create index if not exists lcc_snapshots_doc_hash_idx on lcc_audit_snapshots(doc_id, content_hash);
 create index if not exists lcc_blocks_snapshot_type_idx on lcc_blocks(audit_snapshot_id, block_type);
 create index if not exists lcc_claims_doc_idx on lcc_claims(doc_id);
 create index if not exists lcc_snapshots_artifact_gin on lcc_audit_snapshots using gin (artifact);
+create index if not exists lcc_semantic_tags_doc_type_idx on lcc_semantic_tags(doc_id, tag_type);
+create index if not exists lcc_semantic_tags_chi_vars_idx on lcc_semantic_tags using gin (chi_vars);

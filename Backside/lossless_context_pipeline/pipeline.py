@@ -10,6 +10,7 @@ from .classify import citations, classify_block, domain_badges, equations, overs
 from .embeddings import Embedder
 from .ids import file_doc_id, short_hash, slugify, stable_uuid
 from .markdown_parser import load_markdown, split_blocks
+from .semantic_tags import build_semantic_tags, detect_chi_vars, master_equation_uuid, render_semantic_tag_markdown
 from .schemas import (
     ClaimArch,
     DomainBoundary,
@@ -280,6 +281,7 @@ def build_artifact(path: Path, *, vault_id: str, note_version: str = "1", embedd
                 content_hash=raw["content_hash"],
                 domain_badges=domain_badges(raw["text"]),
                 overstatement_words=overstatement_words(raw["text"]),
+                chi_vars=detect_chi_vars(raw["text"]),
                 embedding=embedder.embed(raw["text"]),
             )
         )
@@ -302,9 +304,26 @@ def build_artifact(path: Path, *, vault_id: str, note_version: str = "1", embedd
     use = _frontmatter_value(frontmatter, "use", "R")
     risk = _frontmatter_value(frontmatter, "risk", "R1")
     address, safe_address, hash_value = build_address(domain, named_entity, state, access, use, risk, vector)
+    hash_value = hash_value or semantic_hash(vector)
+    master_uuid = master_equation_uuid(doc_id, content_hash, address)
+    semantic_tags = build_semantic_tags(
+        doc_id=doc_id,
+        master_uuid=master_uuid,
+        address=address,
+        vector_string=vector_string(vector),
+        semantic_hash=hash_value,
+        blocks=blocks,
+        claims=claim_arch,
+        evidence=evidence_chain,
+        kills=kill_arch,
+        equations=eq_sem,
+        domains=domain_boundary,
+        mechanisms=mechanism_graph,
+    )
 
     return LosslessArtifact(
         ids=IdSet(vault_id=vault_id, doc_id=doc_id, note_version=note_version, content_hash=content_hash, run_id=run_id, audit_snapshot_id=audit_snapshot_id),
+        master_equation_uuid=master_uuid,
         compression_declaration={
             "scope": str(path),
             "goal": "maximum density with maximum reconstructability",
@@ -315,7 +334,7 @@ def build_artifact(path: Path, *, vault_id: str, note_version: str = "1", embedd
         filename_safe_address=safe_address,
         semantic_vector=vector,
         vector_string=vector_string(vector),
-        hash=hash_value or semantic_hash(vector),
+        hash=hash_value,
         spine=_spine(blocks),
         entities=entities,
         semantics=_semantics(blocks),
@@ -337,6 +356,8 @@ def build_artifact(path: Path, *, vault_id: str, note_version: str = "1", embedd
         four_score_dashboard=dashboard,
         cross_dep={"paper_id": frontmatter.get("paper_id", "UNKNOWN"), "depends_on": [], "enables": [], "shared_claims_with": [], "term_drift_flags": [item.term for item in domain_boundary if item.drift_risk == "high"], "orphan_risk": "UNKNOWN"},
         eight_gaps=_eight_gaps(evidence_chain, domain_boundary, eq_sem, risky),
+        semantic_tags=semantic_tags,
+        semantic_tag_markdown=render_semantic_tag_markdown(semantic_tags),
         seed_bank={"writing": [], "code": ["LLM fill pass for EXPAND_REQUIRED fields"], "research": [], "tests": ["reconstruction test"], "diagrams": ["mechanism graph"], "prompts": ["hostile reviewer fill pass"], "filenames": [safe_address + ".json"], "public_language": ["This is an audit snapshot, not a truth verdict."]},
         open_threads=[f"{item} :: LAST_STATE unresolved :: NEXT_ACTION fill by LLM or reviewer" for item in ["buried_claim", "evidence_bridge", "implicit_kill", "known_theory_comparison"]],
         decompress=[

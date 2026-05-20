@@ -362,6 +362,8 @@ def run_workflow(source: Path, export_root: Path, state_root: Path, vault_id: st
     artifact = build_artifact(markdown_path, vault_id=vault_id, note_version=run_id, embeddings=embeddings)
     lossless_dir = export_dir / "lossless"
     lossless_json, lossless_html = write_outputs(artifact, lossless_dir)
+    semantic_tags_md = lossless_dir / f"{artifact.filename_safe_address}.semantic-tags.md"
+    semantic_tags_json = lossless_dir / f"{artifact.filename_safe_address}.semantic-tags.json"
 
     manifest = {
         "workflow": "first-article.workflow",
@@ -376,8 +378,18 @@ def run_workflow(source: Path, export_root: Path, state_root: Path, vault_id: st
             {"station": "conversion", **conversion_meta},
             {"station": "station-lab-all", "export": str(summary_dir)},
             image_result,
-            {"station": "lossless-context", "json": str(lossless_json), "html": str(lossless_html), "address": artifact.address},
+            {
+                "station": "lossless-context",
+                "json": str(lossless_json),
+                "html": str(lossless_html),
+                "semantic_tags_md": str(semantic_tags_md),
+                "semantic_tags_json": str(semantic_tags_json),
+                "address": artifact.address,
+                "master_equation_uuid": artifact.master_equation_uuid,
+            },
         ],
+        "master_equation_uuid": artifact.master_equation_uuid,
+        "semantic_tag_count": len(artifact.semantic_tags),
         "address": artifact.address,
         "vector": artifact.vector_string,
         "semantic_vector": artifact.semantic_vector,

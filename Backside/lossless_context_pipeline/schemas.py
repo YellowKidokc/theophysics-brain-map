@@ -45,6 +45,7 @@ class MarkdownBlock(BaseModel):
     content_hash: str
     domain_badges: list[DomainBadge] = Field(default_factory=list)
     overstatement_words: list[str] = Field(default_factory=list)
+    chi_vars: list[str] = Field(default_factory=list)
     embedding: list[float] | None = None
 
 
@@ -149,10 +150,22 @@ class GapItem(BaseModel):
     repair_action: str
 
 
+class SemanticTag(BaseModel):
+    tag_id: str
+    tag_type: str
+    label: str
+    block_id: str | None = None
+    source_quote: str | None = None
+    chi_vars: list[str] = Field(default_factory=list)
+    master_equation_uuid: str
+    meta: dict = Field(default_factory=dict)
+
+
 class LosslessArtifact(BaseModel):
     protocol_version: str = "1.0"
     generated_at: str = Field(default_factory=utc_now)
     ids: IdSet
+    master_equation_uuid: str
     compression_declaration: dict
     address: str
     filename_safe_address: str
@@ -175,6 +188,8 @@ class LosslessArtifact(BaseModel):
     four_score_dashboard: FourScoreDashboard
     cross_dep: dict
     eight_gaps: dict[str, GapItem]
+    semantic_tags: list[SemanticTag] = Field(default_factory=list)
+    semantic_tag_markdown: str = ""
     seed_bank: dict[str, list[str]]
     open_threads: list[str]
     decompress: list[str]

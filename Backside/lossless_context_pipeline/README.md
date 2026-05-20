@@ -7,12 +7,14 @@ Python controller for the Lossless Context Compression + Semantic Addressing Pro
 Given a Markdown file, the pipeline emits:
 
 - a Nabla-style permanent address: `D/N/V/A/U/R :: VECTOR :: HASH`
+- a deterministic Master Equation UUID for the paper snapshot
+- semantic tag packets for claims, evidence, equations, kill conditions, relationships, and domain boundaries
 - stable document, block, claim, equation, evidence, run, audit, and repair IDs
 - claim archaeology, evidence chains, kill conditions, equation semantics, domain boundaries
 - mechanism graph edges, reviewer seeds, score ledger, four-score dashboard, eight gaps
-- JSON artifact and HTML snapshot
+- JSON artifact, HTML snapshot, `.semantic-tags.md`, and `.semantic-tags.json`
 
-The grade is audit metadata only. The permanent identifier is the address.
+The grade is audit metadata only. The permanent semantic identifier is the address. The Master Equation UUID is the deterministic database key for that address/content snapshot.
 
 ## Run
 
